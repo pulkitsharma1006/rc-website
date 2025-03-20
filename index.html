@@ -11,110 +11,77 @@
 </head>
 
 <body>
-
-    <header>
-        <nav class=" border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-            <div
-                class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl relative border-b border-slate-700 py-3">
-                <a href="https://flowbite.com" class="flex items-center">
-                    <img src="assets/images/logo/laptop-logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+<!-- Header start here -->
+<header>
+    <div class="container">
+        <div class="flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="flex items-center">
+                    <img src="assets/images/logo/roadcast-logo.png" class="mr-3 h-6 sm:h-9"
+                        alt="Roadcast Tech Solutions" />
                 </a>
-                <div class="flex items-center lg:order-2">
-                    <a href="#"
-                        class="text-white dark:text-white  focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Become
-                        partner</a>
-                    <a href="#"
-                        class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Request
-                        Demo</a>
-                    <button data-collapse-toggle="mobile-menu-2" type="button"
-                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="mobile-menu-2" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                        <!-- Dropdown Menu -->
-                        <li x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false"
-                            @click.away="open = false">
-
-                            <a href="#" @click="open = !open"
-                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                Solutions
-                            </a>
-
-                            <!-- First-Level Dropdown -->
-                            <ul x-show="open" x-transition
-                                class="absolute left-0 mt-2 w-full top-[70px] bg-white border rounded-md shadow-md w-40 dark:bg-gray-800 dark:border-gray-700"
-                                @mouseenter="open = true" @mouseleave="open = false">
-
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">About
-                                        Us</a>
-                                </li>
-
-                                <!-- Nested Dropdown -->
-                                <li x-data="{ subOpen: false }" class="relative" @mouseenter="subOpen = true"
-                                    @mouseleave="subOpen = false">
-
-                                    <a href="#" @click="subOpen = !subOpen"
-                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">
-                                        Services
-                                    </a>
-
-                                    <!-- Second-Level Dropdown -->
-                                    <ul x-show="subOpen" x-transition
-                                        class="absolute left-full top-0 mt-0 bg-white border rounded-md shadow-md w-40 dark:bg-gray-800 dark:border-gray-700"
-                                        @mouseenter="subOpen = true" @mouseleave="subOpen = false">
-
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">Web
-                                                Development</a>
-                                        </li>
-                                        <li>
-                                            <a href="#"
-                                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">Marketing</a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700">Careers</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Industries</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Resources</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Company</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </header>
+            <nav class="relative">
+                <ul class="flex items-center">
+                    <li class="mx-2"><a href="javascript:;" class="m1but text-sm ">Solutions <i></i></a></li>
+                    <li class="mx-2"><a href="javascript:;" class="m2but text-sm">Industries <i></i></a></li>
+                    <li class="mx-2"><a href="javascript:;" class="m3but text-sm">Resources <i></i></a></li>
+                    <li class="mx-2"><a href="javascript:;" class="m4but text-sm">Company <i></i></a></li>
+                </ul>
+                <!-- Sub Menus start here -->
+                <div class="submenus smdiv1">
+                    <div class="cont rounded-2xl">
+                        <div>
+                            <h2>Our Solutions</h2>
+                            <a href="#">Fleet Management & Tracking</a></div>
+                        <div><a href="#">Services</a></div>
+                        <div><a href="#">Why Choose Us</a></div>
+                    </div>
+                </div>
+
+                <div class="submenus smdiv2">
+                    <div class="cont rounded-2xl">
+                        <div>
+                            <h2>Our Solutions</h2>
+                            <a href="#">Fleet Management & Tracking</a></div>
+                        <div><a href="#">Services</a></div>
+                        <div><a href="#">Why Choose Us</a></div>
+                    </div>
+                </div>
+
+                <div class="submenus smdiv3">
+                    <div class="cont rounded-2xl">
+                        <div>
+                            <h2>Our Solutions</h2>
+                            <a href="#">Fleet Management & Tracking</a></div>
+                        <div><a href="#">Services</a></div>
+                        <div><a href="#">Why Choose Us</a></div>
+                    </div>
+                </div>
+
+                <div class="submenus smdiv4">
+                    <div class="cont rounded-2xl">
+                        <div>
+                            <h2>Our Solutions</h2>
+                            <a href="#">Fleet Management & Tracking</a></div>
+                        <div><a href="#">Services</a></div>
+                        <div><a href="#">Why Choose Us</a></div>
+                    </div>
+                </div>
+                <!-- Sub Menus end here -->
+            </nav>
+            <div>
+                <a href="#"
+                    class="mr-2 px-5 py-3 text-sm font-normal rounded-lg hover:bg-[linear-gradient(353deg,_#198A81_17.51%,_#23BBAD_100%)]">Become
+                    partner</a>
+                <a href="#"
+                    class="px-5 py-3 text-sm font-normal rounded-lg bg-[linear-gradient(353deg,_#198A81_17.51%,_#23BBAD_100%)] hover:bg-[linear-gradient(53deg,_#23BBAD_17.51%,_#198A81_100%)]">Request
+                    Demo</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header end here -->
     <section>
         <div class="container mx-auto">
             <div class="flex items-center justify-center px-4 py-12 text-center">
@@ -333,82 +300,11 @@
 
             <img src="/assets/images/icons/banner/home-banner-3.png" alt="" class="w-full">
 
-
-
-
-            <!-- <h2
-                class="text-6xl font-semibold mt-24 text-center text-transparent bg-clip-text bg-[linear-gradient(180deg,#2D2D2D_0%,rgba(16,16,16,0.7)_100%)]">
-                What Do <span
-                    class="bg-[linear-gradient(180deg,#3BEEE2_0%,rgba(5,161,148,0.7)_100%)] text-transparent bg-clip-text">
-                    We Monitor?</span></h1>
-                <p class="text-lg font-normal mt-3 text-center text-[#6B6B6B]">We monitor what matters most with regard
-                    to saving fuel costs</p>
-                <div class="grid grid-cols-3 gap-9 my-16">
-                    <div
-                        class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
-                        <div
-                            class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
-                            <img src="/assets/images/icons/icon-book.svg" alt="">
-                        </div>
-                        <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Fuel theft</h3>
-                        <p class="text-sm mt-2 font-normal text-[#4D4D56]">Unauthorized siphoning, pilferage of fuel
-                            from vehicles, storage tanks</p>
-                    </div>
-                    <div
-                        class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
-                        <div
-                            class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
-                            <img src="/assets/images/icons/icon-book.svg" alt="">
-                        </div>
-                        <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Fuel filling</h3>
-                        <p class="text-sm mt-2 font-normal text-[#4D4D56]">Wastage due to spillage, overfilling, under
-                            filling, inaccurate dispensing</p>
-                    </div>
-                    <div
-                        class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
-                        <div
-                            class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
-                            <img src="/assets/images/icons/icon-book.svg" alt="">
-                        </div>
-                        <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Idling</h3>
-                        <p class="text-sm mt-2 font-normal text-[#4D4D56]">Prolonged idling in traffic, loading zones,
-                            or during driver breaks consumes unnecessary fuel.</p>
-                    </div>
-                    <div
-                        class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
-                        <div
-                            class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
-                            <img src="/assets/images/icons/icon-book.svg" alt="">
-                        </div>
-                        <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Hard Braking</h3>
-                        <p class="text-sm mt-2 font-normal text-[#4D4D56]">Frequent sudden stops increase fuel
-                            consumption, wear out brake components.</p>
-                    </div>
-                    <div
-                        class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
-                        <div
-                            class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
-                            <img src="/assets/images/icons/icon-book.svg" alt="">
-                        </div>
-                        <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Harsh Acceleration</h3>
-                        <p class="text-sm mt-2 font-normal text-[#4D4D56]">Fuel wastage by causing the engine to burn
-                            more fuel than necessary.</p>
-                    </div>
-                    <div
-                        class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
-                        <div
-                            class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
-                            <img src="/assets/images/icons/icon-book.svg" alt="">
-                        </div>
-                        <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Overspeed </h3>
-                        <p class="text-sm mt-2 font-normal text-[#4D4D56]">Higher speeds increase air resistance and
-                            engine load, forcing the vehicle to burn more fuel.</p>
-                    </div>
-                </div> -->
+                
         
-        <div class="grid grid-cols-2 gap-8 mt-25">
+        <div class="grid grid-cols-3 gap-8 mt-25">
             <!-- First Section -->
-            <div class="relative">
+            <div class="relative col-span-2">
                 <div class="w-4/5 bg-black p-8 rounded-r-2xl">
                     <video class="w-full h-auto rounded-lg" muted loop>
                         <source src="/assets/images/icons/home-assets/Realtime_Tracking.mp4" type="video/mp4">
@@ -438,7 +334,7 @@
         </div>
         
         <!-- Second Section (Reversed Layout) -->
-        <div class="grid grid-cols-2 gap-8 mt-25">
+        <div class="grid grid-cols-3 gap-8 mt-25">
             <div class="flex justify-center items-center">
                 <div class="w-[352px]">
                     <div class="flex items-center">
@@ -453,7 +349,7 @@
                     </p>
                 </div>
             </div>
-            <div class="relative flex justify-end">
+            <div class="relative col-span-2 flex justify-end">
                 <div class="w-4/5 bg-black p-8 rounded-l-2xl">
                     <video class="w-full h-auto rounded-lg" muted loop>
                         <source src="/assets/images/icons/home-assets/Realtime_Tracking.mp4" type="video/mp4">
@@ -469,8 +365,8 @@
         </div>
         
 
-        <div class="grid grid-cols-2 gap-8 mt-25">
-            <div class="relative">
+        <div class="grid grid-cols-3 gap-8 mt-25">
+            <div class="relative col-span-2">
                 <div class="w-4/5 bg-black p-8 rounded-r-2xl">
                     <video id="hoverVideo" class="w-full h-auto rounded-lg" muted loop>
                         <source src="/assets/images/icons/home-assets/driver_behaviour.mp4" type="video/mp4">
@@ -501,7 +397,7 @@
 
         
         <!-- Second Section (Reversed Layout) -->
-        <div class="grid grid-cols-2 gap-8 mt-25">
+        <div class="grid grid-cols-3 gap-8 mt-25">
             <div class="flex justify-center items-center">
                 <div class="w-[352px]">
                     <div class="flex items-center">
@@ -516,7 +412,7 @@
                     </p>
                 </div>
             </div>
-            <div class="relative flex justify-end">
+            <div class="relative flex justify-end col-span-2">
                 <div class="w-4/5 bg-black p-8 rounded-l-2xl">
                     <video class="w-full h-auto rounded-lg" muted loop>
                         <source src="/assets/images/icons/home-assets/Delivery_Management_Video.mp4" type="video/mp4">
@@ -538,7 +434,7 @@
 
     </section>
     <section>
-        <div class="container mx-auto">
+        <div class="container mx-auto py-24">
             <h2 class="text-6xl font-semibold mt-16 mb-4 text-center text-transparent bg-clip-text bg-gradient-to-b from-white to-[rgba(255,255,255,0.7)]">
                 Empowering You to Move
                 <br> <span class="bg-[linear-gradient(180deg,#3BEEE2_0%,rgba(5,161,148,0.7)_100%)] text-transparent bg-clip-text">
@@ -557,6 +453,8 @@
                         <p class="text-sm font-normal text-[#C6C6C6] mt-4">
                             ID card trackers with advanced capabilities, <br> allow you to keep track of your loved ones.
                         </p>
+
+                      
                     </div>
                 </div>
                 <div class="row-span-2 text-center">
@@ -596,7 +494,7 @@
                     </div>
                 </div>
               </div>
-              <div class="flex items-center px-4 py-12 text-center mt-24">
+              <div class="flex items-center py-12 text-center mt-24">
                 <div class="flex items-center justify-center py-2 px-4 border border-[#3ECCC3] text-xs rounded-md shadow-[inset_0px_-7px_11px_rgba(62,204,195,0.12)]">
 
                     <img src="/assets/images/icons/icon-fuel-monitoring.svg" alt="" class="mr-2">
@@ -622,39 +520,377 @@
                     
                 </div>
             </div>
-            <div class="mt-9 w-screen">
-                <div class="flex w-full">
-                    <div class="w-1/2 bg-white mr-2">1</div>
-                    <div class="w-1/2 bg-white mr-2">1</div>
-                    <div class="w-1/2 bg-white mr-2">1</div>
-                    <div class="w-1/2 bg-white mr-2">1</div>
+            <div class="py-24 relative">
+                
+                <div class="inline-flex">
+                    <div class="max-w-[430px] mr-8 bg-[#393939B2] text-white border border-[#B4B4B4] shadow-[0px_1px_3px_0px_rgba(16,24,40,0.10),_0px_1px_2px_0px_rgba(16,24,40,0.06)] p-6 rounded-3xl">
+                        <img src="assets/images/icons/banner/carousel-1.png" alt="" class="rounded-2xl">
+                        <h4 class="mt-6 text-2xl font-bold">Transportation & Logistics</h4>
+                        <p class="mt-4 text-lg font-normal">Get more by spending less on streamlining fleet operations.</p>
+
+                        <a href="#" class="flex my-8 text-[#5ABFB5] hover:no-underline">Know More <img src="assets/images/icons/chevron-right.svg" alt="" class="ml-2"></a>
+                    </div>
+
+                    <div class="max-w-[430px] text-black mr-8 bg-gradient-to-br from-[#D4FFFB] to-[#FFFFFF] border border-[#B4B4B4] shadow-[0px_1px_3px_0px_rgba(16,24,40,0.10),_0px_1px_2px_0px_rgba(16,24,40,0.06)] p-6 rounded-3xl">
+                        <img src="assets/images/icons/banner/carousel-1.png" alt="" class="rounded-2xl">
+                        <h4 class="mt-6 text-2xl font-bold">Transportation & Logistics</h4>
+                        <p class="mt-4 text-lg font-normal">Get more by spending less on streamlining fleet operations.</p>
+
+                        <a href="#" class="flex my-8 text-[#5ABFB5] hover:no-underline">Know More <img src="assets/images/icons/chevron-right.svg" alt="" class="ml-2"></a>
+                    </div>
+
+                    <div class="max-w-[430px] mr-8 text-white bg-[#393939B2] border border-[#B4B4B4] shadow-[0px_1px_3px_0px_rgba(16,24,40,0.10),_0px_1px_2px_0px_rgba(16,24,40,0.06)] p-6 rounded-3xl">
+                        <img src="assets/images/icons/banner/carousel-1.png" alt="" class="rounded-2xl">
+                        <h4 class="mt-6 text-2xl font-bold">Transportation & Logistics</h4>
+                        <p class="mt-4 text-lg font-normal">Get more by spending less on streamlining fleet operations.</p>
+
+                        <a href="#" class="flex my-8 text-[#5ABFB5] hover:no-underline">Know More <img src="assets/images/icons/chevron-right.svg" alt="" class="ml-2"></a>
+                    </div>
+                    <div class="max-w-[430px] mr-8 text-black mr-8 bg-gradient-to-br from-[#D4FFFB] to-[#FFFFFF] shadow-[0px_1px_3px_0px_rgba(16,24,40,0.10),_0px_1px_2px_0px_rgba(16,24,40,0.06)] p-6 rounded-3xl">
+                        <img src="assets/images/icons/banner/carousel-1.png" alt="" class="rounded-2xl">
+                        <h4 class="mt-6 text-2xl font-bold">Transportation & Logistics</h4>
+                        <p class="mt-4 text-lg font-normal">Get more by spending less on streamlining fleet operations.</p>
+
+                        <a href="#" class="flex my-8 text-[#5ABFB5] hover:no-underline">Know More <img src="assets/images/icons/chevron-right.svg" alt="" class="ml-2"></a>
+                    </div>
                     
                 </div>
             </div>
         </div>
     </section>
+    <section class="bg-white rounded-t-[55px] mt-[-60px] py-24">
+        <div class="container mx-auto">
 
-    <footer class="bg-[#070600]">
+        <div class="flex items-center py-12 text-center">
+            <div class="flex items-center justify-center py-2 px-4 border border-[#3ECCC3] text-xs rounded-md ">
+
+                <img src="/assets/images/icons/icon-fuel-monitoring.svg" alt="" class="mr-2">
+                <p class="bg-[linear-gradient(90deg,#7DE5DC_0.01%,#1F6761_41.01%,#3ECCC3_60%),linear-gradient(0deg,rgba(255,255,255,2.4),rgba(255,255,255,7.4))] bg-clip-text text-transparent">
+                    Targeting all kinds of Industries</p>
+            </div>
+            
+          </div>
+            <div>
+
+                <h1 class="leading-[40px] text-5xl font-semibold"><span class=" bg-gradient-to-b from-[#2D2D2D] to-[rgba(16,16,16,0.7)] bg-clip-text text-transparent">We
+                    We Build.</span>
+                    <span class="bg-[linear-gradient(180deg,#3BEEE2_0%,rgba(5,161,148,0.7)_100%)] bg-clip-text text-transparent">That
+                        We Sustain.</span>
+                    </h1>
+                    <p class="text-xl font-normal mt-4 text-[#6B6B6B]">We are a team of professionals with a passion for creating sustainable solutions for the future.</p>From vision to execution, we offer benefits and scalable resources, 
+                        to take your business to the next level.</p>
+
+                        <div class="grid grid-cols-3 gap-9 my-16">
+                            <div
+                                class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
+                                <div
+                                    class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
+                                    <img src="/assets/images/icons/icon-book.svg" alt="">
+                                </div>
+                                <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Fuel theft</h3>
+                                <p class="text-sm mt-2 font-normal text-[#4D4D56]">Unauthorized siphoning, pilferage of fuel
+                                    from vehicles, storage tanks</p>
+                                    <div class="flex mt-6">
+                                        <div class="py-3 px-8 rounded-3xl transition-all duration-300 group relative overflow-hidden">
+                                            <!-- Gradient Background (Normal State) -->
+                                            <div class="absolute inset-0 bg-[#FCFCFD] transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#3BEEE2] group-hover:to-[#05A194B3]"></div>
+                                        
+                                            <!-- SVG Icon -->
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                                class="relative z-10 transition-all duration-300 stroke-[#14A99C] group-hover:stroke-white">
+                                                <path d="M13.25 8.88965V1.13965M13.25 1.13965H5.5M13.25 1.13965L1.5 12.8896" 
+                                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                            </div>
+                            <div
+                                class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
+                                <div
+                                    class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
+                                    <img src="/assets/images/icons/icon-book.svg" alt="">
+                                </div>
+                                <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Fuel filling</h3>
+                                <p class="text-sm mt-2 font-normal text-[#4D4D56]">Wastage due to spillage, overfilling, under
+                                    filling, inaccurate dispensing</p>
+                                    <div class="flex mt-6">
+                                        <div class="py-3 px-8 rounded-3xl transition-all duration-300 group relative overflow-hidden">
+                                            <!-- Gradient Background (Normal State) -->
+                                            <div class="absolute inset-0 bg-[#FCFCFD] transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#3BEEE2] group-hover:to-[#05A194B3]"></div>
+                                        
+                                            <!-- SVG Icon -->
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                                class="relative z-10 transition-all duration-300 stroke-[#14A99C] group-hover:stroke-white">
+                                                <path d="M13.25 8.88965V1.13965M13.25 1.13965H5.5M13.25 1.13965L1.5 12.8896" 
+                                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            <div
+                                class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
+                                <div
+                                    class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
+                                    <img src="/assets/images/icons/icon-book.svg" alt="">
+                                </div>
+                                <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Idling</h3>
+                                <p class="text-sm mt-2 font-normal text-[#4D4D56]">Prolonged idling in traffic, loading zones,
+                                    or during driver breaks consumes unnecessary fuel.</p>
+                                    <div class="flex mt-6">
+                                        <div class="py-3 px-8 rounded-3xl transition-all duration-300 group relative overflow-hidden">
+                                            <!-- Gradient Background (Normal State) -->
+                                            <div class="absolute inset-0 bg-[#FCFCFD] transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#3BEEE2] group-hover:to-[#05A194B3]"></div>
+                                        
+                                            <!-- SVG Icon -->
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                                class="relative z-10 transition-all duration-300 stroke-[#14A99C] group-hover:stroke-white">
+                                                <path d="M13.25 8.88965V1.13965M13.25 1.13965H5.5M13.25 1.13965L1.5 12.8896" 
+                                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            <div
+                                class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
+                                <div
+                                    class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
+                                    <img src="/assets/images/icons/icon-book.svg" alt="">
+                                </div>
+                                <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Hard Braking</h3>
+                                <p class="text-sm mt-2 font-normal text-[#4D4D56]">Frequent sudden stops increase fuel
+                                    consumption, wear out brake components.</p>
+                                    <div class="flex mt-6">
+                                        <div class="py-3 px-8 rounded-3xl transition-all duration-300 group relative overflow-hidden">
+                                            <!-- Gradient Background (Normal State) -->
+                                            <div class="absolute inset-0 bg-[#FCFCFD] transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#3BEEE2] group-hover:to-[#05A194B3]"></div>
+                                        
+                                            <!-- SVG Icon -->
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                                class="relative z-10 transition-all duration-300 stroke-[#14A99C] group-hover:stroke-white">
+                                                <path d="M13.25 8.88965V1.13965M13.25 1.13965H5.5M13.25 1.13965L1.5 12.8896" 
+                                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            <div
+                                class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
+                                <div
+                                    class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
+                                    <img src="/assets/images/icons/icon-book.svg" alt="">
+                                </div>
+                                <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Harsh Acceleration</h3>
+                                <p class="text-sm mt-2 font-normal text-[#4D4D56]">Fuel wastage by causing the engine to burn
+                                    more fuel than necessary.</p>
+                                    <div class="flex mt-6">
+                                        <div class="py-3 px-8 rounded-3xl transition-all duration-300 group relative overflow-hidden">
+                                            <!-- Gradient Background (Normal State) -->
+                                            <div class="absolute inset-0 bg-[#FCFCFD] transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#3BEEE2] group-hover:to-[#05A194B3]"></div>
+                                        
+                                            <!-- SVG Icon -->
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                                class="relative z-10 transition-all duration-300 stroke-[#14A99C] group-hover:stroke-white">
+                                                <path d="M13.25 8.88965V1.13965M13.25 1.13965H5.5M13.25 1.13965L1.5 12.8896" 
+                                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            <div
+                                class="p-8 h-74 rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.2)_0%,rgba(128,199,192,0.2)_100%)] shadow-[0px_0px_0px_1px_#18181B0A,0px_8px_32px_0px_#18181B0F] drop-shadow-lg">
+                                <div
+                                    class="flex p-4 h-16 w-16 rounded-2xl bg-[linear-gradient(0deg,rgba(0,116,107,0.1),rgba(0,116,107,0.1)),radial-gradient(50%_50%_at_50%_50%,rgba(23,213,197,0.2)_0%,rgba(23,213,197,0)_100%)]">
+                                    <img src="/assets/images/icons/icon-book.svg" alt="">
+                                </div>
+                                <h3 class="mt-6 text-[#18181B] text-2xl font-normal">Overspeed </h3>
+                                <p class="text-sm mt-2 font-normal text-[#4D4D56]">Higher speeds increase air resistance and
+                                    engine load, forcing the vehicle to burn more fuel.</p>
+                                    <div class="flex mt-6">
+                                        <div class="py-3 px-8 rounded-3xl transition-all duration-300 group relative overflow-hidden">
+                                            <!-- Gradient Background (Normal State) -->
+                                            <div class="absolute inset-0 bg-[#FCFCFD] transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#3BEEE2] group-hover:to-[#05A194B3]"></div>
+                                        
+                                            <!-- SVG Icon -->
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" 
+                                                class="relative z-10 transition-all duration-300 stroke-[#14A99C] group-hover:stroke-white">
+                                                <path d="M13.25 8.88965V1.13965M13.25 1.13965H5.5M13.25 1.13965L1.5 12.8896" 
+                                                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                        </div> 
+                </div>
+        </div>
+    </section>
+
+    <!-- Testonials Start Here -->
+    <section>
+        <div class="text-center py-12 mb-8">
+            <div class="flex items-center justify-center py-12">
+                <div class="flex items-center justify-center py-2 px-4 border border-[#3ECCC3] text-xs rounded-md ">
+    
+                    <img src="/assets/images/icons/icon-fuel-monitoring.svg" alt="" class="mr-2">
+                    <p class="bg-[linear-gradient(90deg,#7DE5DC_0.01%,#1F6761_41.01%,#3ECCC3_60%),linear-gradient(0deg,rgba(255,255,255,2.4),rgba(255,255,255,7.4))] bg-clip-text text-transparent">
+                        Testimonials</p>
+                </div>
+                
+              </div>
+                <div class="">
+    
+                    <h1 class="leading-[40px] text-5xl font-semibold"><span class="bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent">We
+                        Driven by Data, </span>
+                        <span class="bg-[linear-gradient(180deg,#3BEEE2_0%,rgba(5,161,148,0.7)_100%)] bg-clip-text text-transparent">That
+                            Proven by People</span>
+                        </h1>
+                        <p class="text-xl font-normal mt-4 text-[#c6c6c6]">Real users, real impact—see what they say.</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-4 gap-8">
+            
+            <div class="h-[212px] bg-[#1C2A2B] p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <img src="assets/images/icons/testimonials/testimonials-1.png" alt="" class="h-12 rounded-full rounded-2xl">
+                    <div class="ml-4">
+                        <p class="text-base text-[#F4F0FF]">
+                            Ryan Delk
+                        </p>
+                        <p class="text-sm text-[#EFEDFD99]">@delk</p>
+                    </div>
+                </div>
+                <p class="mt-8">
+                    Don’t take it from me: <span class="font-semibold bg-[linear-gradient(102.8deg,_#3ECCC3_0.29%,_#09776E_98.5%)] bg-clip-text text-transparent"> @Roadcast</span> is magic.
+                </p>
+
+            </div>
+            <div class="h-[212px] bg-[#1C2A2B] p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <img src="assets/images/icons/testimonials/testimonials-1.png" alt="" class="h-12 rounded-full rounded-2xl">
+                    <div class="ml-4">
+                        <p class="text-base text-[#F4F0FF]">
+                            Ryan Delk
+                        </p>
+                        <p class="text-sm text-[#EFEDFD99]">@delk</p>
+                    </div>
+                </div>
+                <p class="mt-8">
+                    Don’t take it from me: <span class="font-semibold bg-[linear-gradient(102.8deg,_#3ECCC3_0.29%,_#09776E_98.5%)] bg-clip-text text-transparent"> @Roadcast</span> is magic.
+                </p>
+
+            </div>
+            <div class="h-[212px] bg-[#1C2A2B] p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <img src="assets/images/icons/testimonials/testimonials-1.png" alt="" class="h-12 rounded-full rounded-2xl">
+                    <div class="ml-4">
+                        <p class="text-base text-[#F4F0FF]">
+                            Ryan Delk
+                        </p>
+                        <p class="text-sm text-[#EFEDFD99]">@delk</p>
+                    </div>
+                </div>
+                <p class="mt-8">
+                    Don’t take it from me: <span class="font-semibold bg-[linear-gradient(102.8deg,_#3ECCC3_0.29%,_#09776E_98.5%)] bg-clip-text text-transparent"> @Roadcast</span> is magic.
+                </p>
+
+            </div>
+            <div class="h-[212px] bg-[#1C2A2B] p-6 rounded-2xl">
+                <div class="flex items-center">
+                    <img src="assets/images/icons/testimonials/testimonials-1.png" alt="" class="h-12 rounded-full rounded-2xl">
+                    <div class="ml-4">
+                        <p class="text-base text-[#F4F0FF]">
+                            Ryan Delk
+                        </p>
+                        <p class="text-sm text-[#EFEDFD99]">@delk</p>
+                    </div>
+                </div>
+                <p class="mt-8">
+                    Don’t take it from me: <span class="font-semibold bg-[linear-gradient(102.8deg,_#3ECCC3_0.29%,_#09776E_98.5%)] bg-clip-text text-transparent"> @Roadcast</span> is magic.
+                </p>
+
+            </div>
+            <div class="h-[212px] bg-[#1C2A2B] p-6 rounded-2xl mr-2">
+                <div class="flex items-center">
+                    <img src="assets/images/icons/testimonials/testimonials-1.png" alt="" class="h-12 rounded-full rounded-2xl">
+                    <div class="ml-4">
+                        <p class="text-base text-[#F4F0FF]">
+                            Ryan Delk
+                        </p>
+                        <p class="text-sm text-[#EFEDFD99]">@delk</p>
+                    </div>
+                </div>
+                <p class="mt-8">
+                    Don’t take it from me: <span class="font-semibold bg-[linear-gradient(102.8deg,_#3ECCC3_0.29%,_#09776E_98.5%)] bg-clip-text text-transparent"> @Roadcast</span> is magic.
+                </p>
+
+            </div>
+            <div class="h-[212px] bg-[#1C2A2B] p-6 rounded-2xl mr-2">
+                <div class="flex items-center">
+                    <img src="assets/images/icons/testimonials/testimonials-1.png" alt="" class="h-12 rounded-full rounded-2xl">
+                    <div class="ml-4">
+                        <p class="text-base text-[#F4F0FF]">
+                            Ryan Delk
+                        </p>
+                        <p class="text-sm text-[#EFEDFD99]">@delk</p>
+                    </div>
+                </div>
+                <p class="mt-8">
+                    Don’t take it from me: <span class="font-semibold bg-[linear-gradient(102.8deg,_#3ECCC3_0.29%,_#09776E_98.5%)] bg-clip-text text-transparent"> @Roadcast</span> is magic.
+                </p>
+
+            </div>
+            <div class="h-[212px] bg-[#1C2A2B] p-6 rounded-2xl mr-2">
+                <div class="flex items-center">
+                    <img src="assets/images/icons/testimonials/testimonials-1.png" alt="" class="h-12 rounded-full rounded-2xl">
+                    <div class="ml-4">
+                        <p class="text-base text-[#F4F0FF]">
+                            Ryan Delk
+                        </p>
+                        <p class="text-sm text-[#EFEDFD99]">@delk</p>
+                    </div>
+                </div>
+                <p class="mt-8">
+                    Don’t take it from me: <span class="font-semibold bg-[linear-gradient(102.8deg,_#3ECCC3_0.29%,_#09776E_98.5%)] bg-clip-text text-transparent"> @Roadcast</span> is magic.
+                </p>
+
+            </div>
+            <div class="h-[212px] bg-[#1C2A2B] p-6 rounded-2xl mr-2">
+                <div class="flex items-center">
+                    <img src="assets/images/icons/testimonials/testimonials-1.png" alt="" class="h-12 rounded-full rounded-2xl">
+                    <div class="ml-4">
+                        <p class="text-base text-[#F4F0FF]">
+                            Ryan Delk
+                        </p>
+                        <p class="text-sm text-[#EFEDFD99]">@delk</p>
+                    </div>
+                </div>
+                <p class="mt-8">
+                    Don’t take it from me: <span class="font-semibold bg-[linear-gradient(102.8deg,_#3ECCC3_0.29%,_#09776E_98.5%)] bg-clip-text text-transparent"> @Roadcast</span> is magic.
+                </p>
+
+            </div>
+        </div>
+
+    </section>    
+    <!-- Testonials Start Here -->
+
+    <footer class="bg-[#001615]">
         <div class="mx-auto max-w-screen-xl py-16">
             <div class="">
-                <div class="py-8 px-4 lg:px-12 bg-[#222222] rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="py-8 px-4 lg:px-12 bg-[#2A3333B2] border border-[#606060] rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div>
-                        <h2 class="text-2xl text-center lg:text-left font-bold text-white">Get the latest news!</h2>
-
-                        <p class="mt-2 text-center lg:text-left text-gray-500">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
-                            molestias.
-                        </p>
+                        <h2 class="text-2xl text-center lg:text-left font-bold text-white">Cast aside all other options. <br>
+                            <span class="bg-gradient-to-r from-[#3BEEE2] to-[#05A194B3] bg-clip-text text-transparent">Choose RoadCast !</span></h2>
                     </div>
-                    <div class="flex justify-center lg:justify-end items-center">
-                        <button class="relative text-white py-1 px-1 rounded-full">
-                            <span
-                                class="absolute inset-0 rounded-full p-[2px] bg-gradient-to-r from-[#74429A] via-[#74429A] to-[#97D5FF]"></span>
-                            <span
-                                class="relative block bg-gradient-to-r from-[#2A2C81] via-[#824da8] to-[#824DAC] rounded-full px-4 py-2">
-                                Contact Us
-                            </span>
-                        </button>
+                    <div class="flex justify-end items-center">
+                        <button class="px-4 py-3 text-sm font-medium rounded-md bg-[linear-gradient(353deg,_#198A81_17.51%,_#23BBAD_100%)]">Contact Us</button>
                     </div>
                 </div>
                 <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-y-16">
@@ -662,18 +898,13 @@
 
                     <div class="">
                         <p class="font-medium text-white">
-                            <img src="https://roadcast.in/static/img/favicon.png" alt="" class="w-12 h-12">
+                            <img src="assets/images/logo/laptop-logo.png" alt="" class="w-24">
                         </p>
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <p class="text-[#888888] transition hover:opacity-75">Real-time tracking for
-                                    everything that
-                                    matters to you</p>
+                                <p class="text-[#888888] transition hover:opacity-75">Because Every Mile Counts</p>
                             </li>
-
-
-                            <p class="font-medium text-white">Office Address</p>
 
                             <li>
                                 <p class="text-[#888888] transition hover:opacity-75 mb-6">B - 66, Second Floor,
@@ -916,9 +1147,9 @@
         </div>
     </footer>
 
-    <script src="/assets/js/library/jQuery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="/assets/js/library/jquery-min.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/functions.js"></script>
 </body>
 
 </html>
