@@ -87,16 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
     animateCounter("miles-counter", 32000, 2500, 1000, true);  // Count in steps of 1000 → "32k"
 });
 
-// Video play and pause when mouse hover in out
-const video = document.getElementById("hoverVideo");
-
-    video.addEventListener("mouseenter", () => {
-        video.play();
-    });
-
-    video.addEventListener("mouseleave", () => {
-        video.pause();
-    });
+document.querySelectorAll(".hover-video").forEach(video => {
+    video.addEventListener("mouseenter", () => video.play());
+    video.addEventListener("mouseleave", () => video.pause());
+});
 
 
     const carousel = document.getElementById("carousel");
