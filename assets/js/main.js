@@ -118,3 +118,7 @@ document.querySelectorAll(".hover-video").forEach(video => {
             index = (index + 1) % (totalItems - visibleItems + 1);
             updateCarousel();
         }, 3000);
+
+
+        
+// auto scrolling for testnomials

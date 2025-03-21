@@ -90,3 +90,42 @@ header nav ul li a.active i {background: url('../images/icons/icon-arrow-down-a.
   header nav, .tp-btns {display: none;}
   .menu {display:block;}
 }
+
+.owl-carousel .owl-item img {
+  width: 48px;
+}
+
+
+.inside-shadow::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 0;
+  height: 100%;
+  box-shadow: 86px 0 1000px 230px rgba(0, 22, 21, 1);
+  z-index: 99;
+}
+.inside-shadow::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 0;
+  height: 100%;
+  box-shadow: -86px 0 1000px 230px rgba(0, 22, 21, 1);
+  z-index: 99;
+}
+
+@keyframes slide {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slide 20s linear infinite;
+}

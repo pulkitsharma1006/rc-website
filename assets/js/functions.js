@@ -45,3 +45,48 @@ $(document).ready(function(){
 	/*Tree view menu | End*/
 
     });
+
+    $(document).ready(function(){
+        $("#Testimonials-2").owlCarousel({
+            loop: true,                 // Infinite loop
+            margin: 16,                 // Space between items
+            autoplay: true,             // Very low timeout to keep it moving
+            autoplaySpeed: 8000,        // Smooth transition speed
+            autoplayHoverPause: false,  // Keep autoplay running
+            slideTransition: 'linear',  // Ensures smooth continuous sliding
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3.2
+                }
+            }
+        });
+    });
+
+    $(document).ready(function(){
+        $("#Testimonials-1").owlCarousel({
+            loop: true,                 // Infinite loop
+            margin: 16,                 // Space between items
+            autoplay: true,             // Very low timeout to keep it moving
+            autoplaySpeed: 6500,        // Smooth transition speed
+            autoplayHoverPause: false,  // Keep autoplay running
+            slideTransition: 'linear',  // Ensures smooth continuous sliding
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3.7
+                }
+            }
+        });
+    });
+    
