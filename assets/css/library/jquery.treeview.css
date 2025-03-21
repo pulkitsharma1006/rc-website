@@ -1,35 +1,37 @@
-﻿.treeview, .treeview ul {padding: 0; margin: 0; list-style: none; border-top:1px solid #eee; border-bottom:1px solid #eee;}
-.treeview li {margin: 0; padding:0px 0px 0px 0px; display:block; color:#fff; font-size:15px; background:#36454f; border-bottom:1px solid #eee; position:relative;}
-.treeview a {text-decoration:none; color:#fff; font-weight:600; position:relative; z-index:5;}
+﻿.treeview, .treeview ul {padding: 0; margin: 0; list-style: none; border-top:1px solid rgba(255,255,255,0.5);}
+.treeview li {margin: 0; padding:0; display:block; color:#fff; font-size:14px; background-image: linear-gradient(353deg, #198A81 17.51%, #23BBAD 100%); border-bottom:1px solid rgba(255,255,255,0.5); position:relative;}
+.treeview a {text-decoration:none; color:#fff; font-weight:500; position:relative; z-index:5;}
 #treecontrol { margin: 1em 0; display: none;}
-.treeview span {display:block; cursor:pointer; padding:15px 15px; font-weight:600; position:relative; z-index:5;}
+.treeview span {display:block; cursor:pointer; padding:15px 20px; font-weight:600; position:relative; z-index:5;}
 
-.treeview li.collapsable {background:#fb911c; color:#fff;}
-.treeview li.collapsable::before {display:inline-block; content:"‒"; position:absolute; right:17px; top:7px; z-index:1; color:#fff; font-size:23px; font-weight:300;}
-.treeview li.expandable {background:#36454f; border-bottom:1px solid #eee;}
-.treeview li.expandable::before {display:inline-block; content:"+"; position:absolute; right:15px; top:7px; z-index:1; color:#fff; font-size:26px; font-weight:300;}
+.treeview li.collapsable {background-image: linear-gradient(65deg, #2ed4c3 17.51%, #158279 100%); color:#fff;}
+.treeview li.collapsable::before {display:inline-block; content:"‒"; position:absolute; right:17px; top:7px; z-index:1; color:#fff; font-size:23px; font-weight:400;}
+.treeview li.expandable {background-image: linear-gradient(353deg, #198A81 17.51%, #23BBAD 100%); border-bottom:1px solid rgba(255,255,255,0.5);}
+.treeview li.expandable::before {display:inline-block; content:"+"; position:absolute; right:15px; top:7px; z-index:1; color:#fff; font-size:26px; font-weight:400;}
 .treeview li.expandable span a {width:100%; display:block;}
 .treeview li.last {border-bottom:none !important;}
 
 .treeview li ul { margin-top:0px; border-bottom:0px solid #eee;}
-.treeview li ul li.collapsable {background:#eee; padding-left:0px !important;}
-.treeview li ul li.collapsable span {font-weight:700 !important; line-height:19px !important;}
-.treeview li ul li.collapsable span a {font-weight:700 !important; color:#36454f !important; line-height:19px !important; display:block;}
-.treeview li ul li.expandable {background:#fff; text-transform:none; margin-bottom:0px; border-bottom:1px solid #eee; padding-left:0px !important;}
-.treeview li ul li.expandable span a {width:100%; display:block; color:#36454f !important;}
-.treeview li ul li {background:#fff; border-bottom:1px solid #eee; padding-left:0px !important; text-transform:none; color:#36454f !important;}
-.treeview li ul li a {color:#36454f !important;}
+.treeview li ul li.collapsable {background: #98e7df; padding-left:0px !important;}
+.treeview li ul li.collapsable span {font-weight:400 !important; line-height:19px !important;}
+.treeview li ul li.collapsable span a {font-weight:400 !important; color:#333 !important; line-height:19px !important; display:block;}
+.treeview li ul li.expandable {background:#fff; text-transform:none; margin-bottom:0px; border-bottom:1px solid #ccc; padding-left:0px !important;}
+.treeview li ul li.expandable span a {width:100%; display:block; font-weight:400 !important; color:#333 !important;}
+.treeview li ul li {background:#fff; border-bottom:1px solid #ccc; padding-left:0px !important; text-transform:none; color:#333 !important;}
+.treeview li ul li a {color:#333 !important;}
 .treeview li ul li.last {border-bottom:none !important;}
+.treeview li ul li.expandable::before {display:inline-block; content:"+"; position:absolute; right:15px; top:7px; z-index:1; color:#333; font-size:26px; font-weight:400;}
+
 
 .treeview li ul li ul li.collapsable {background:url(../../images/minusm.png) no-repeat 95% 13px #fff; padding-left:0px !important;}
-.treeview li ul li ul li.expandable {background:url(../../images/plusm.png) no-repeat 95% 13px #fff; margin-bottom:0px; border-bottom:1px solid #eee; padding-left:0px !important;}
+.treeview li ul li ul li.expandable {background:url(../../images/plusm.png) no-repeat 95% 13px #fff; margin-bottom:0px; border-bottom:1px solid rgba(255,255,255,0.5) padding-left:0px !important;}
 .treeview li ul li ul li.collapsable span a {font-weight:400 !important;}
-.treeview li ul li ul li {background:#fff;  border-bottom:1px solid #eee; padding-left:0px !important;}
+.treeview li ul li ul li {background:#fff;  border-bottom:1px solid #ccc; padding-left:0px !important;}
 .treeview li ul li ul li.last { border-bottom:none !important;}
 
 .treeview li ul li ul li ul li.collapsable {background:#eee;}
-.treeview li ul li ul li ul li.expandable {background:url(../../images/plusm.png) no-repeat 95% 13px #fff; margin-bottom:0px; border-bottom:1px solid #eee;}
-.treeview li ul li ul li ul li {background:#fff;  border-bottom:1px solid #eee;}
+.treeview li ul li ul li ul li.expandable {background:url(../../images/plusm.png) no-repeat 95% 13px #fff; margin-bottom:0px; border-bottom:1px solid rgba(255,255,255,0.5);}
+.treeview li ul li ul li ul li {background:#fff;  border-bottom:1px solid rgba(255,255,255,0.5);}
 .treeview li ul li ul li ul li.last { border-bottom:none !important;}
 
 .treeview div.lastCollapsable-hitarea, .treeview div.lastExpandable-hitarea { background-position: 0; }

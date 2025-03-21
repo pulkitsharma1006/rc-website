@@ -25,4 +25,23 @@ $(document).ready(function(){
         showMenu(".m5but",".smdiv5");
         showMenu(".m6but",".smdiv6");
 
+        /*mobile menu | Start*/
+	$(document).on('click',".btnmenu",function() {
+		$('.mobmenucont').stop(true, true).animate({left:0}, 200);
+		$('.bgm').delay(200).fadeIn(200);
+	});
+		
+	$(document).on('click',".closemmenu",function() {
+		$('.mobmenucont').stop(true, true).animate({left:'-85%'}, 200);
+		$('.bgm').delay(100).fadeOut(700);
+	});
+	/*mobile menu | End*/
+
+    /*Tree view menu | Start*/
+	$("#browser").treeview({
+		collapsed: true,
+		animated:"normal"
+	});	
+	/*Tree view menu | End*/
+
     });

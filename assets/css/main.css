@@ -7,6 +7,13 @@ body {
   background-color: #001615;
   color: #fff;
 }
+* { transition:all .5s;}
+
+/* Works on Firefox */
+*{scrollbar-width:thin; scrollbar-color:#14A99C #000;}
+*::-webkit-scrollbar {width:10px;}
+*::-webkit-scrollbar-track {background:#000;}
+*::-webkit-scrollbar-thumb {background-color:#14A99C; border:0; border-radius:8px;}
 
 .container {max-width: 100% !important; margin: 0 100px; width: auto;}
 
@@ -62,3 +69,24 @@ header nav ul li a.active i {background: url('../images/icons/icon-arrow-down-a.
 .submenus {padding: 34px 0 0 0; position:absolute; top:38px; left:-260px; width:1180px; max-height:400px;}
 .submenus .cont {width:100%; background:#fff; padding: 24px;}
 .smdiv1, .smdiv2, .smdiv3, .smdiv4, .smdiv5, .smdiv6, .smdiv7 {display:none;}
+
+.menu {cursor:pointer; display:none; position:absolute; width:30px; right:24px; top:24px;}
+.menu .bar {background:#23BBAD; height:2px; width:100%; display:block; margin:6px 0;}
+.menu .bar1 {background:#23BBAD; height:2px; width:50%; display:block; left:0;}
+.menu .bar2 {background:#23BBAD; height:2px; width:50%; display:block; right:0; position:absolute;}
+.menu:hover .bar1 {width:100%;}
+.menu:hover .bar2 {width:100%;}
+
+.mobmenucont {position:fixed; top:0px; left:-85%; width:85%; z-index:999999; height:100%; background:#000; overflow-y:auto;}
+.mlogo img {height:42px;}
+.bgm {position:fixed; top:0px; left:0px; width:100%; min-height:100%; height:100%; background:rgba(0,0,0,0.9); z-index:99999; display:none; /*backdrop-filter: saturate(180%) blur(10px); -webkit-backdrop-filter:saturate(180%) blur(10px);*/}
+.bgm::before {content:"X"; position:absolute; top:12px; right:15px; color:#23BBAD; font-size:22px; font-weight:300;}
+.mobilemenucontent {margin:0; padding:0;}
+.closemmenu {cursor:pointer;}
+
+
+@media (max-width:1023px){
+  .container {margin: 0 24px;}
+  header nav, .tp-btns {display: none;}
+  .menu {display:block;}
+}
