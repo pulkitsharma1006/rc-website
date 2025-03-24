@@ -97,6 +97,13 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   width: 48px;
 }
 
+.owl-carousel .owl-item img.rounded-2xl.w-full{
+  width: 100% !important;
+}
+.owl-carousel .owl-item a>img{
+  width: 24px !important;
+}
+
 
 .inside-shadow::before{
   content: '';

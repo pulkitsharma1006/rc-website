@@ -89,4 +89,37 @@ $(document).ready(function(){
             }
         });
     });
+
+
+    $(document).ready(function(){
+        var owl = $(".owl-carousel");
+    
+        owl.owlCarousel({
+            loop: true,                // Infinite loop
+            margin: 10,                // Space between items
+            nav: false,                // Hide default navigation
+            autoplay: true,            // Auto-slide
+            autoplayTimeout: 2000,     // Slide every 2 seconds
+            autoplayHoverPause: true,  // Pause on hover
+            animateOut: "fadeOut",     // Fade-out effect
+            animateIn: "fadeIn",       // Fade-in effect
+            smartSpeed: 800,           // Smooth transition speed
+            responsive: {
+                0: { items: 1 },       // 1 item on small screens
+                640: { items: 2 },     // 2 items on medium screens
+                1024: { items: 3 }     // 3 items on large screens
+            }
+        });
+    
+        // Custom Navigation
+        $(".next").click(function() {
+            owl.trigger("next.owl.carousel");
+        });
+    
+        $(".prev").click(function() {
+            owl.trigger("prev.owl.carousel");
+        });
+    });
+    
+
     

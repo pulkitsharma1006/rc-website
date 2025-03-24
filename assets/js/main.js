@@ -86,11 +86,21 @@ document.addEventListener("DOMContentLoaded", function () {
     animateCounter("rating-counter", 46, 1500, 1, false);      // Normal count for rating → "4.6"
     animateCounter("miles-counter", 32000, 2500, 1000, true);  // Count in steps of 1000 → "32k"
 });
-
+//this is for the when video content comes into screen video automatically play
 document.querySelectorAll(".hover-video").forEach(video => {
-    video.addEventListener("mouseenter", () => video.play());
-    video.addEventListener("mouseleave", () => video.pause());
+    let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.play();  // Play when in viewport
+            } else {
+                entry.target.pause(); // Pause when out of viewport
+            }
+        });
+    }, { threshold: 0.5 }); // 50% visibility required to trigger
+
+    observer.observe(video);
 });
+
 
 
     const carousel = document.getElementById("carousel");
