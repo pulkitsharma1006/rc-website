@@ -119,6 +119,17 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   z-index: 99;
 }
 
+.no-spinner::-webkit-outer-spin-button,
+  .no-spinner::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  /* Hide arrows in number input for Firefox */
+  .no-spinner {
+      -moz-appearance: textfield;
+  }
+
 @keyframes slide {
   from {
       transform: translateX(100%);

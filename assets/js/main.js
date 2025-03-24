@@ -121,4 +121,51 @@ document.querySelectorAll(".hover-video").forEach(video => {
 
 
         
-// auto scrolling for testnomials
+        function incrementFleet() {
+            let input = document.getElementById("vehicle");
+            let value = parseInt(input.value || 0);
+            input.value = value + 1;
+        }
+        
+        function decrementFleet() {
+            let input = document.getElementById("vehicle");
+            let value = parseInt(input.value || 0);
+            if (value > 0) {
+                input.value = value - 1;
+            }
+        }
+        function increment() {
+            let input = document.getElementById("fuelInput");
+            input.value = parseInt(input.value || 0) + 1; // Increase value
+        }
+    
+        function decrement() {
+            let input = document.getElementById("fuelInput");
+            input.value = Math.max(0, parseInt(input.value || 0) - 1); // Decrease but not below 0
+        }
+
+        function incrementLiter() {
+            let input = document.getElementById("fuelInput");
+            input.value = parseInt(input.value || 0) + 1; // Increase value
+        }
+    
+        function decrementLiter() {
+            let input = document.getElementById("fuelInput");
+            input.value = Math.max(0, parseInt(input.value || 0) - 1); // Decrease but not below 0
+        }
+
+       // Currency mapping
+    const currencySymbols = {
+        "INR": "₹",
+        "USD": "$",
+        "EUR": "€",
+        "GBP": "£",
+        "JPY": "¥"
+    };
+
+    // Update currency symbol dynamically
+    document.getElementById("currencySelect").addEventListener("change", function () {
+        const selectedCurrency = this.value;
+        document.getElementById("currencySymbol").textContent = currencySymbols[selectedCurrency];
+    });
+        
