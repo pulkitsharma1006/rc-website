@@ -127,6 +127,12 @@ $(document).ready(function(){
             owl.trigger("prev.owl.carousel");
         });
     });
+
+    
+
+
+
+
     
 
     

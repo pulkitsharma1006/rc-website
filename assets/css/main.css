@@ -153,7 +153,28 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 .animate-slide {
   animation: slide 20s linear infinite;
 }
-.media-container {display: flex;}
-.media-container .media-card-item .media-card{display: flex;}
-.media-container .media-card-item .media-card .media-card-img{width: 40%;}
-.media-container .media-card-item .media-card .media-card-content{width: 60%;}
+
+.social-icons li a svg path{
+  fill: #999;
+  transform: all 0.5s fade-in;
+}
+
+.social-icons li a.flipkart:hover svg path{
+  fill: #F7A200;
+}
+.social-icons li a.linkdin:hover svg path{
+  fill: #0077B5;
+}
+.social-icons li a.instagram:hover svg path{
+  fill : #C13584;
+}
+
+.social-icons li a.amazon:hover svg path{
+  fill : #FF9900;
+}
+.social-icons li a.you_tube:hover svg path{
+  fill : #FF0000;
+}
+.social-icons li a.facebook:hover svg path {
+fill : #1877F2
+}
