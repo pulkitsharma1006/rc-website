@@ -128,6 +128,28 @@ $(document).ready(function(){
         });
     });
 
+    $(document).ready(function () {
+        $("#openPopup").click(function () {
+            $("#videoFrame").attr("src", "https://www.youtube.com/embed/ldWWGNb37lE?si=-ItWkk4RoA41F_eT");
+            $("#videoPopup").removeClass("hidden");
+            $('body').addClass('overflow-hidden');
+        });
+
+        $("#closePopup").click(function () {
+            $("#videoPopup").addClass("hidden");
+            $("#videoFrame").attr("src", ""); // Stop the video when closing
+            $('body').removeClass('overflow-hidden');
+        });
+
+        // Close modal when clicking outside the video
+        $("#videoPopup").click(function (e) {
+            if ($(e.target).closest(".relative").length === 0) {
+                $("#videoPopup").addClass("hidden");
+                $("#videoFrame").attr("src", "");
+            }
+        });
+    });
+
 
 
     

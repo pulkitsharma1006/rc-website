@@ -978,21 +978,41 @@
                 class="mt-5 mb-12 px-5 py-4 text-sm cursor-pointer font-medium rounded-md bg-[linear-gradient(353deg,_#198A81_17.51%,_#23BBAD_100%)]">Watch
                 Now</button>
 
-            <div class="relative">
-                <img src="/assets/images/icons/media-img/media-img-1.png" class="w-full  rounded-2xl" alt="media-img-1">
+                <!-- Video Section -->
+<div class="relative">
+    <img src="/assets/images/icons/media-img/media-img-1.png" class="w-full rounded-2xl" alt="media-img-1">
 
-                <!-- Play button (centered) -->
-                <button class="absolute inset-0 flex items-center justify-center">
-                    <img src="/assets/images/icons/icon-play.svg" alt="Play" class="h-12 lg:h-48">
-                </button>
+    <!-- Play button (centered) -->
+    <button id="openPopup" class="absolute inset-0 flex items-center justify-center">
+        <img src="/assets/images/icons/icon-play.svg" alt="Play" class="h-12 lg:h-48">
+    </button>
 
-                <!-- EP-01 (bottom-right) -->
-                <div class="absolute bottom-0 right-0 bg-black text-white text-2xl lg:text-5xl px-8 py-6 rounded-tl-md" >
-                    EP-01
-                </div>
-            </div>
+    <!-- EP-01 (bottom-right) -->
+    <div class="absolute bottom-0 right-0 bg-black text-white text-2xl lg:text-5xl px-8 py-6 rounded-tl-md">
+        EP-01
+    </div>
+</div>
         </div>
         </section>
+
+        <!-- Video Pop Modal -->
+<div id="videoPopup" class="fixed inset-0 bg-black/75 flex items-center justify-center hidden">
+    <div class="bg-white px-4 py-8 rounded-lg relative w-11/12 md:w-3/4 lg:w-1/2">
+        <!-- Close Button -->
+        <button id="closePopup" class="absolute top-1 right-1 text-black text-2xl">&times;</button>
+
+        <!-- Video Player -->
+        <div class="relative w-full" style="padding-top: 56.25%;">
+            <iframe id="videoFrame" class="absolute top-0 left-0 w-full h-full"
+                src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+        <!-- <div class="h-screen w-screen bg-black opacity-50 fixed top-0 z-[999] flex">
+        
+
+        </div> -->
         <section class="pv-8 lg:py-16">
     
             <div class="container mx-auto">
