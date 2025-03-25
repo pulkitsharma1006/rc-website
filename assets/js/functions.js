@@ -2,10 +2,17 @@ $(document).ready(function(){
 
     function showMenu(prmBut,prmMenu){
         $(prmBut).hover(function(){
-            $(prmMenu).stop(true, true).show();
+            $(prmMenu).css({
+                "top": "0",  // Start position (above the button)
+                "display": "block",
+                "opacity": "1"
+            }).animate({
+                "top": "42px",  // Move down to normal position
+                "opacity": "1"
+            }, 600); // Animation duration (300ms)
             $(this).addClass("active");
         }, function(){
-            $(prmMenu).hide();
+            $(prmMenu).css({"display": "none", "opacity": "0"});
             $(this).removeClass("active");
         });
 
