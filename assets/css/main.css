@@ -91,10 +91,13 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 
 .v-frame {background: url('/assets/images/icons/frames/video_frame.png') no-repeat 0 0; background-size: cover; border-radius: 2rem; position: relative;}
 
-@media (max-width:1023px){
-  .container {margin: 0 24px;}
+
+@media (max-width:1110px){
   header nav, .tp-btns {display: none;}
   .menu {display:block;}
+}
+  @media (max-width:1023px){
+  .container {margin: 0 24px;}
 }
 
 .owl-carousel .owl-item img {
