@@ -7,7 +7,7 @@ $(document).ready(function(){
                 "display": "block",
                 "opacity": "1"
             }).animate({
-                "top": "42px",  // Move down to normal position
+                "top": "39px",  // Move down to normal position
                 "opacity": "1"
             }, 600); // Animation duration (300ms)
             $(this).addClass("active");
