@@ -103,7 +103,7 @@ $(document).ready(function(){
     
         owl.owlCarousel({
             loop: true,                // Infinite loop
-            margin: 10,                // Space between items
+            margin: 60,                // Space between items
             nav: false,                // Hide default navigation
             autoplay: true,            // Auto-slide
             autoplayTimeout: 2000,     // Slide every 2 seconds
