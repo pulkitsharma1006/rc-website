@@ -114,7 +114,8 @@ $(document).ready(function(){
             responsive: {
                 0: { items: 1 },       // 1 item on small screens
                 640: { items: 2 },     // 2 items on medium screens
-                1024: { items: 3 }     // 3 items on large screens
+                1024: { items: 2.5 },    // 3 items on large screens
+                1440: { items: 4 },    // 3 items on large screens
             }
         });
     
@@ -148,6 +149,49 @@ $(document).ready(function(){
                 $("#videoFrame").attr("src", "");
             }
         });
+    });
+
+
+
+
+    $(document).ready(function () {
+        let lastScrollTop = 0;
+        let animationTriggered = false;
+
+        function isElementInViewport(el) {
+            let rect = el.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom > 0;
+        }
+
+        function animateProgress(scrollTop) {
+            if (!animationTriggered && isElementInViewport(document.querySelector(".progress-container"))) {
+                $(".progress-container").removeClass("opacity-0");
+
+                // Adjust width based on scroll position
+                let scrollPercentage = (scrollTop / ($(document).height() - $(window).height())) * 100;
+                
+                let progressBar1Width = Math.min(30 + (scrollPercentage * 0.5), 80) + "%"; // 30% → 80%
+                let progressBar2Width = Math.max(80 - (scrollPercentage * 0.5), 30) + "%"; // 80% → 30%
+
+                $(".progress-bar-1").css("width", progressBar1Width);
+                $(".progress-bar-2").css("width", progressBar2Width);
+
+                animationTriggered = true;
+            }
+        }
+
+        $(window).on("scroll", function () {
+            let scrollTop = $(window).scrollTop();
+
+            if (isElementInViewport(document.querySelector(".progress-container"))) {
+                animateProgress(scrollTop);
+            }
+
+            lastScrollTop = scrollTop;
+        });
+
+        // Initial check if already in view
+        animateProgress($(window).scrollTop());
     });
 
 
