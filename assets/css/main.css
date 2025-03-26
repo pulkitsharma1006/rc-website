@@ -327,3 +327,33 @@ fill : #1877F2
   }
 }
 /* Testimonials CSS end here */
+
+.c-btn {display: inline-block;
+  flex: 1 1 auto; font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  text-align: center;
+  transition: 0.8s;
+  background: linear-gradient(
+      353deg,
+      var(--c1, #f6d365) 17.51% ,
+      var(--c2, #fda085) 100%)
+      var(--x, 0) / 200%;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+
+.c-btn:hover {
+  --x: 200%; box-shadow: 0 0 10px 0 #fff;
+}
+
+.btn-1 {--c1: #198A81; --c2: #23BBAD;}
+
+.btn-2 {--c1: none; --c2: none; border: 1px inset #fff;}
+
+.btn-3 {--c1: #84fab0; --c2: #8fd3f4;}
+
+.btn-4 {--c1: #f6d365; --c2: #fda085;}
+
+.btn-5 {--c1: #ffecd2; --c2: #fcb69f;}
+
