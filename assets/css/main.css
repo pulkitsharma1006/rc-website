@@ -357,3 +357,20 @@ fill : #1877F2
 
 .btn-5 {--c1: #ffecd2; --c2: #fcb69f;}
 
+.blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  background-image: linear-gradient(#3BEEE2 0%, #05A194 100%);
+  filter: blur(110px);
+  transition: all 850ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-90% + 15px), -0%);
+  z-index: -1;
+}
