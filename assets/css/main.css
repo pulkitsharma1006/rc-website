@@ -329,7 +329,7 @@ fill : #1877F2
 /* Testimonials CSS end here */
 
 .c-btn {display: inline-block;
-  flex: 1 1 auto; font-size: 0.9rem;
+  font-size: 0.9rem;
   padding: 0.6rem 1.4rem;
   text-align: center;
   transition: 0.8s;
