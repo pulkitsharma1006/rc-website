@@ -1,3 +1,4 @@
+new WOW().init();
 // Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
     var cursor = document.createElement("div"); // Create a div element
@@ -77,29 +78,36 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Counter increase
 document.addEventListener("DOMContentLoaded", function () {
-    function animateCounter(elementId, target, duration, step, isShort = false) {
-        let start = 0;
-        let stepTime = Math.abs(Math.floor(duration / (target / step)));
-        let element = document.getElementById(elementId);
+    function animateCounter(elementId, target, duration, step, format = "short") {
+        const element = document.getElementById(elementId);
+        if (!element) return;
 
-        let timer = setInterval(function () {
-            start += step;
-            element.textContent = isShort ? (start / 1000) + "k" : (start / 10).toFixed(1); 
+        let value = 0, stepTime = Math.max(1, duration / (target / step));
 
-            if (start >= target) {
-                clearInterval(timer);
-                element.textContent = isShort ? (target / 1000) + "k" : (target / 10).toFixed(1); 
+        const timer = setInterval(() => {
+            value = Math.min(value + step, target);
+
+            // Show "15000" instead of "15k" only for happy-customers-counter
+            if (elementId === "happy-customers-counter") {
+                element.textContent = value; 
+            } else {
+                element.textContent = format === "short" ? `${(value / 1000).toFixed(0)}k` 
+                    : (value / 10).toFixed(1);
             }
+
+            if (value >= target) clearInterval(timer);
         }, stepTime);
     }
 
-    // Start counters when the page loads
-    animateCounter("fleet-counter", 24000, 2000, 1000, true);  // Count in steps of 1000 → "24k"
-    animateCounter("rating-counter", 46, 1500, 1, false);      // Normal count for rating → "4.6"
-    animateCounter("miles-counter", 32000, 2500, 1000, true);  // Count in steps of 1000 → "32k"
+    // Start counters
+    animateCounter("fleet-counter", 24000, 2000, 1000, "short");    // "24k"
+    animateCounter("rating-counter", 46, 1500, 1, "decimal");       // "4.6"
+    animateCounter("miles-counter", 32000, 2500, 1000, "short");    // "32k"
+    animateCounter("happy-customers-counter", 15000, 2000, 500);    // "15000" (not "15k")
 });
+
+
 //this is for the when video content comes into screen video automatically play
 document.querySelectorAll(".hover-video").forEach(video => {
     let observer = new IntersectionObserver(entries => {
