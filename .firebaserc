@@ -1,0 +1,13 @@
+{
+  "projects": {},
+  "targets": {
+    "roadcast-a146c": {
+      "hosting": {
+        "roadcast-rc": [
+          "roadcast-rc"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
