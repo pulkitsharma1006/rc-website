@@ -194,6 +194,51 @@ $(document).ready(function(){
         animateProgress($(window).scrollTop());
     });
 
+    $(document).ready(function () {
+        $(".hoverVideo").each(function () {
+            this.pause(); // Ensure all videos are paused on page load
+        });
+    
+        $(".playPauseButton").on("click", function () {
+            let video = $(this).siblings(".hoverVideo")[0]; // Get the associated video
+            let playIcon = $(this).find(".playIcon");
+            let pauseIcon = $(this).find(".pauseIcon");
+    
+            if (video.paused) {
+                video.play();
+                playIcon.addClass("hidden");
+                pauseIcon.removeClass("hidden");
+            } else {
+                video.pause();
+                playIcon.removeClass("hidden");
+                pauseIcon.addClass("hidden");
+            }
+        });
+    
+        $(".hoverVideo").on("play", function () {
+            let button = $(this).siblings(".playPauseButton");
+            button.find(".playIcon").addClass("hidden");
+            button.find(".pauseIcon").removeClass("hidden");
+        });
+    
+        $(".hoverVideo").on("pause", function () {
+            let button = $(this).siblings(".playPauseButton");
+            button.find(".playIcon").removeClass("hidden");
+            button.find(".pauseIcon").addClass("hidden");
+        });
+    
+        $(".relative.group").on("mouseenter", function () {
+            $(this).find(".playPauseButton").css("opacity", "1");
+        });
+    
+        $(".relative.group").on("mouseleave", function () {
+            let video = $(this).find(".hoverVideo")[0];
+            if (!video.paused) {
+                $(this).find(".playPauseButton").css("opacity", "0");
+            }
+        });
+    });
+
 
 
     // accordion | Start
@@ -229,7 +274,7 @@ $(document).ready(function(){
         });
     });
 
-/*-------------------------------------------------------------------------------
+    /*-------------------------------------------------------------------------------
 	  Contact Page Form 
 	-------------------------------------------------------------------------------*/
 
@@ -316,7 +361,10 @@ $(document).ready(function(){
             });
         }
             
-    })
+    });
+    
+
+
     
     
 
