@@ -229,7 +229,94 @@ $(document).ready(function(){
         });
     });
 
+/*-------------------------------------------------------------------------------
+	  Contact Page Form 
+	-------------------------------------------------------------------------------*/
 
+    
+    $('#contactForm').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            country: {
+                required: false
+            },
+            phone: {
+                required: true,
+                minlength: 6
+            },
+            message: {
+                required: true,
+                minlength: 20
+            }
+        },
+        messages: {
+            name: {
+                required: "please enter your name",
+                minlength: "please enter your name"
+            },
+            email: {
+                required: "please enter email"
+            },
+            subject: {
+                required: "please enter phone number"
+            },
+            message: {
+                required: "you have to write something to send this form.",
+                minlength: "Add atleast 20 characters to submit the form."
+            }
+        },
+        submitHandler: function(form) {
+            $('#submitBtn').html('Sending...');
+        
+            // Define a unique key to track submission time
+            const formSubmitKey = "formSubmitted";
+            const storedTimestamp = localStorage.getItem(formSubmitKey);
+            const currentTime = new Date().getTime();
+        
+            // Check if the key exists and if 24 hours have passed
+            if (storedTimestamp && (currentTime - storedTimestamp) < 24 * 60 * 60 * 1000) {
+                $('#submitBtn').html('Request a Demo');
+                return false; // Prevent form submission
+            }
+        
+            // Set the timestamp value
+            $('#formSubmitTimestamp').val(new Date().toISOString());
+        
+            console.log($(form).serialize());
+        
+            $(form).ajaxSubmit({
+                type: "POST",
+                data: $(form).serialize(),
+                url: "https://prod-s2.track360.net.in/api/v1/auth/contact-details-website",
+                success: function() {
+                    // Store the current timestamp in localStorage
+                    localStorage.setItem(formSubmitKey, currentTime);
+        
+                    $('#submitBtn').html('Sent !');
+                    $('#contactForm :input').attr('disabled', 'disabled');
+                    $('#contactForm').fadeTo("slow", 1, function() {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor', 'default');
+                        window.location = 'https://roadcast.in/thanks.html';
+                    });
+                },
+                error: function() {
+                    $('#contactForm').fadeTo("slow", 1, function() {
+                        $('#error').fadeIn();
+                        $('#submitBtn').html('Failed !');
+                    });
+                }
+            });
+        }
+            
+    })
     
     
 
