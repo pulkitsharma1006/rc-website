@@ -1,9 +1,16 @@
-var cursor = document.querySelector('.blob');
-document.addEventListener('mousemove', function(e){
-  var x = e.clientX;
-  var y = e.clientY;
-  cursor.style.transform = `translate3d(calc(${e.clientX}px - 90%), calc(${e.clientY}px - 0%), -0)`
-});
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    var cursor = document.createElement("div"); // Create a div element
+    cursor.classList.add("blob"); // Add class "blob"
+    document.body.appendChild(cursor); // Append it inside the body
+  
+    document.addEventListener("mousemove", function (e) {
+      var x = e.clientX;
+      var y = e.clientY;
+      cursor.style.transform = `translate3d(calc(${x}px - 50%), calc(${y}px - 50%), 0)`;
+    });
+  });
+  
 
 document.addEventListener("DOMContentLoaded", function () {
     const features = document.querySelectorAll(".feature-item");
