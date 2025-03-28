@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Demo Case - Roadcast</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <meta name="description" content="Roadcast is a new-age Saas based logistics automation platform. We offer hyperlocal solutions for businesses, including courier and parcel services and ecommerce support. Real-time fleet management. GPS Tracking.">
+    <meta name="keywords" content="best courier service, delivery courier, international shipping logistics, out for delivery, deliveries food, grocery delivery app, e commerce, ecommerce business, gps tracker, fleet tracking">
+    <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon">
+    
+    <!-- Social Media Share -->
+    <script type="text/javascript" src="/includes/inc-social-media-share.js"></script>
+
+    <!-- All CSS  -->
+    <script type="text/javascript" src="/includes/inc-all-css.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CST86Z8FWR"></script>
+
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-CST86Z8FWR');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-52GWM8K');
+    </script>
+
+    <!-- Hotjar Tracking Code for Roadcast -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {hjid: 3418025, hjsv: 6};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '965115668085540');
+        fbq('track', 'PageView');
+    </script>
+
+    
+    <noscript><img height="1" width="1" alt="" style="display:none"
+                   src="https://www.facebook.com/tr?id=965115668085540&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body class="pt-14">
+
+    <!-- Languages start here -->
+    <div id="google_translate_element" style="display: none;"></div>
+    <div class="language-dropdown"><div class="dropdown-btn" onclick="toggleDropdown()"><img src="https://flagcdn.com/w40/gb.png" id="selected-flag"><span id="selected-language">English</span></div><div class="dropdown-menu" id="dropdown-menu"><div onclick="changeLanguage('en', 'gb.png', 'English')"><img src="https://flagcdn.com/w40/gb.png"> English</div><div onclick="changeLanguage('ar', 'sa.png', 'Arabic')"><img src="https://flagcdn.com/w40/sa.png"> Arabic</div><div onclick="changeLanguage('fr', 'fr.png', 'French')"><img src="https://flagcdn.com/w40/fr.png"> French</div><div onclick="changeLanguage('de', 'de.png', 'German')"><img src="https://flagcdn.com/w40/de.png"> German</div><div onclick="changeLanguage('hi', 'in.png', 'Hindi')"><img src="https://flagcdn.com/w40/in.png"> Hindi</div><div onclick="changeLanguage('it', 'it.png', 'Italian')"><img src="https://flagcdn.com/w40/it.png"> Italian</div><div onclick="changeLanguage('ja', 'jp.png', 'Japanese')"><img src="https://flagcdn.com/w40/jp.png"> Japanese</div><div onclick="changeLanguage('zh-CN', 'cn.png', 'Mandarin')"><img src="https://flagcdn.com/w40/cn.png"> Mandarin</div><div onclick="changeLanguage('ru', 'ru.png', 'Russian')"><img src="https://flagcdn.com/w40/ru.png"> Russian</div><div onclick="changeLanguage('es', 'es.png', 'Spanish')"><img src="https://flagcdn.com/w40/es.png"> Spanish</div><div onclick="changeLanguage('th', 'th.png', 'Thai')"><img src="https://flagcdn.com/w40/th.png"> Thai</div><div onclick="changeLanguage('vi', 'vn.png', 'Vietnamese')"><img src="https://flagcdn.com/w40/vn.png"> Vietnamese</div></div></div>
+    <!-- Languages end here -->
+
+    <!-- Header start here -->
+    <script src="/includes/inc-header.js"></script>
+    <!-- Header end here -->
+    <section class="lg:py-24 py-14 lg:pb-4 bg-white">
+        <div class="container mx-auto px-4 lg:px-12">
+            <div class="relative w-full rounded-md overflow-hidden lg:h-[600px] mb-8">
+                <!-- Image -->
+                <img src="https://s3-alpha-sig.figma.com/img/5d0e/2997/5f81660dba4bf9585417ef495f574f31?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=p1Hd-RSB~5Dy177KEVUdwJDVrzqQLhsmrTRGZpl4L5vO6YHOvCTf8nH1EOX1oOrKksaQcSEKdUhASIOjWvfl03CRnCRXfJGbsId4yC7eTSQGDDNPqxaQMzayY7Ni21~S~eg0eE8~g-mUgt9UVL73DbQKcChlSaaYTIuLWigCfkiDAgDRnngIaeln4fI2gDk83PNZbWODHgAopI4UuhHHkgAIw5C6tz1gTd7YbcUI0YTZyAf1J9C810cRtMrXo0Tf06o1Qogkm7fv0p6Do4wSTSKVp4EwXJnlCY1yuQwB1QQjtR06pnMCiGAxHPh669P~wgPzhUZd87j4HpLVZNt9Fg__" 
+                    alt="" class="w-full h-full object-cover">
+                
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-80"></div>
+            
+                <!-- Text -->
+                <div class="absolute bottom-18 left-18 text-white text-lg font-bold">
+                    <h1 class="leading-[60px] text-2xl lg:text-5xl wow animate__ animate__fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <span class="font-normal bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0.7)_100%)] bg-clip-text text-transparent">
+                            Deblogging: Decoding  Insights</span><br>
+                        <span class="font-semibold bg-[linear-gradient(180deg,#3BEEE2_0%,rgba(5,161,148,0.7)_100%)] bg-clip-text text-transparent"> 
+                            Blogs Blogs Blogs Blogs</span>
+                    </h1>
+                    <p class="text-[#C6C6C6] font-normal text-base sm:text-lg mt-4 wow animate__ animate__fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">From fleets to heavy machinery, our fuel monitoring system ensures 
+                       <br class="hidden md:block"> accurate tracking and efficiency across all vehicle types.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container mx-auto">
+
+            <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+                <div class="col-span-2">
+                    <div class="border border-[#d8d9e0] px-12 py-10 rounded-2xl min-w-80 max-w-96">
+                        <img src="https://s3-alpha-sig.figma.com/img/6c1d/fc5e/3fea0c75f87b551289232f0bc6d1d3d7?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YsnnjnIPAy0H4IU26XiqAmLWqK5Erbx0aAkLpljO6PXI16zrIeBpRXYUgm6kthbkZXieOKmg0weTr6h157suveakTNPJd9qWUwAPfkpEOmtJl02TvUjUFy6~eTFIpgS~GKIdC7UON9qBZwi63a0H2NXbaxyzcVHMfGzE91TQmx7kU1SYCHm15JGld8dc0X5zQAE7-J2P0i-~jJKmVSUj8JnlqSQ-fFNRJkBu7s58dvrhrFAvoKGsemU0VIai8P93GRp44TPUixPbnD73q3M47H~P3ksIH1rclzHMQjhnRHiA5a8o26mTRAaPYgAfa4HyiRNUzbzATKwCmtJh6SckDQ__" alt="" class="h-12">
+                        <hr class="my-9 border border-[#D8D9E0]">
+                        <div class="grid grid-cols-1 gap-8">
+                            <div>
+
+                                <div class="flex items-center gap-4">
+                                    <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
+                                    <p class="mt-2 text-base font-normal text-[#252422]">Location</p>
+                                </div>
+                                <p class="text-base font-normal text-[#8B8D98]">India, New Delhi</p>
+                            </div>
+                            
+
+                            <div>
+
+                                <div class="flex items-center gap-4">
+                                    <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
+                                    <p class="mt-2 text-base font-normal text-[#252422]">Type</p>
+                                </div>
+                                <p class="text-base font-normal text-[#8B8D98]">Construction</p>
+                            </div>
+
+                            <div>
+
+                                <div class="flex items-center gap-4">
+                                    <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
+                                    <p class="mt-2 text-base font-normal text-[#252422]">Fleet Size</p>
+                                </div>
+                                <p class="text-base font-normal text-[#8B8D98] mt-1">1200</p>
+                            </div>
+                        </div>
+                        <hr class="my-9 border border-[#D8D9E0]">
+
+                        <p class="text-[#252422] text-xl font-normal mb-2 ">Product Used</p>
+                        <div class="grid grid-cols-1 gap-2">
+                            <div class="flex items-center gap-4">
+                                <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
+                                <p class="text-base text-[#878682]">Dashcams</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
+                                <p class="text-base text-[#878682]">Gps Tracking</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
+                                <p class="text-base text-[#878682]">Fuel Monitoring</p>
+                            </div>
+                        </div>
+                        <hr class="my-9 border border-[#D8D9E0]">
+                        <p class="text-[#252422] text-xl font-normal mb-2 ">Intrested In Our Solutions</p>
+                        <button class="c-btn btn-1 w-full">Subscribe</button>
+                
+                    </div>
+                </div>
+                <div class="col-span-4">
+                    <div class="p-5 bg-[#F6F6F6] rounded-2xl">
+                        <h4 class="text-xl lg:text-3xl font-semibold text-[#0D0D12]">Overview</h4>
+                        <p class="text-[#666D80] text-lg font-normal mt-5 mb-2 lg:mb-5">
+                            The CFO is ascending. Earlier this year, Fortune <a href="#" class="text-[#14A99C] underline"> reported</a> that in the first half of 2022, 8.1% of CFOs at Fortune 500 and S&P 500 companies were promoted to CEO up from 5.6% a decade earlier. The jump reflects how business success and financial agility have become inseparable.
+                        </p>
+                        <p class="text-[#666D80] text-lg font-normal mt-5 mb-2 lg:mb-5">
+                            It’s also consistent with our own recently released <a href="#" class="text-[#14A99C] underline"> CFO insights report,</a> which found that 68% of finance leaders believe that streamlining financial operations is an essential part of their company’s strategic growth. They see it as a prerequisite for entering new markets and launching new business models.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-[#115D56] mt-14">
+                            <div class="flex flex-col items-center">
+                                <h4 id="fleet-counter" class="text-3xl lg:text-6xl font-normal">24k</h4>
+                                <p class="text-sm font-normal mt-6 uppercase">No. Of Fleets onboarded</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <h4 class="text-3xl lg:text-6xl font-normal flex">
+                                    <span id="rating-counter">4.6</span>
+                                    <img src="/assets/images/icons/icon-rating.svg" alt="" class="ml-2 w-6 md:w-8">
+                                </h4>
+                                <p class="text-sm font-normal mt-6 uppercase">Google rating</p>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <h4 id="miles-counter" class="text-3xl lg:text-6xl font-normal">32k</h4>
+                                <p class="text-sm font-normal mt-6 uppercase">Miles Covered</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="my-8">
+                        <img src="https://s3-alpha-sig.figma.com/img/c382/cc39/5adf611702b8d21c21098c8c7d6e44a1?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CpJJ9Gtu6U82gNcevfBopOy1Q3cVz4aq5xDAjeyD6ipzhykgF6uZGLMhquazMYXcRdxpRij3h5W2nzoKBMTwKaMczkFioiWnKgtGNldGf51dK9CJh-0-x-kTOuayPVce4U1u7xIuQeLJrS~Tg6IMjNylQxZHgOZwxGebyZ~6QaAqpKXuBE1P40UUkuia09pLXPf~4M3PgArD6hhIUMQC1MtL0n0GeTX5UJhzMnQP5FFWrruBQR4W~w5h64ZLk6cINij7Yq~-oJin3NBUwESPYmcnjo8JoZbFR6ViEclvMq1SOVdLxy5rklj7xKCS543Eg3QDTFAEB3~bsJu19Egpfw__" alt="">
+
+                        <h4 class="text-xl lg:text-3xl font-semibold text-[#070113] mt-4">The Problem</h4>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-6">Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>
+                        <h6 class="text-[#0D0D12] text-xl font-normal mb-5">Improved Billing migrations</h6>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-12">Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>
+                        <img src="https://s3-alpha-sig.figma.com/img/d10f/04f2/1252adc8ec1e9dcb07517d4da2ba7db6?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TXe0nQzjMxi5W1Jhwh4lhkUqHX4dmvmCvv3j8Z0Gq~vivn74xMcNZxw5bbyEjYwXxjJTEj9kHK2E8WA9nJXwow8GFTrkrTIHYeCCyhYz4~gTjKkynhGe4GHXMRFMN46X7JHLgvLbrOKwNW1iZvA2D3ggNIHZ8yxszzXoRRqo4AWd~5ZzABCGy1SKIlh5CVro4kZJ6caQHUG8M7mMhDeg1k-cI~AavBNyP6VcHkdHE4MncTpdSy6fd7ucEJtbuLGQH740st2pA5XjtA9MC9isLb-dhxdxdoRSwg8z5ir6gSlLf65hIEFUF1ewYHGP5dNzSGONrHVL8YckpdMuk9lLWg__" alt="">
+                        <h4 class="text-xl lg:text-3xl font-semibold text-[#070113] mt-4">The solution</h4>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-2 lg:mb-4">Revenue recovery is a key part of how Stripe Billing maximizes revenue: we use machine learning to retry failed recurring payments at the optimal time, based on hundreds of dynamic signals. Our Smart Retries algorithm continuously gets better, and we’ve improved the recovery rate by 15.5% in 2023.</p>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-12">Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>
+                        
+                    </div>
+                    <div class="p-5 bg-[#F6F6F6] rounded-2xl">
+                        <h4 class="text-xl lg:text-3xl font-semibold text-[#0D0D12]">Overview</h4>
+                        <p class="text-[#666D80] text-lg font-normal mt-5 mb-2 lg:mb-5">
+                            “ The CFO is ascending. Earlier this year, Fortune <a href="#" class="text-[#14A99C] underline"> reported</a> that in the first half of 2022, 8.1% of CFOs at Fortune 500 and S&P 500 companies were promoted to CEO up from 5.6% a decade earlier. The jump reflects how business success and financial agility have become inseparable.
+                        </p>
+                        <p class="text-[#666D80] text-lg font-normal mt-5 mb-2 lg:mb-5">
+                            It’s also consistent with our own recently released<a href="#" class="text-[#14A99C] underline"> CFO insights report, </a>which found that 68% of finance leaders believe that streamlining financial operations is an essential part of their company’s strategic growth. They see it as a prerequisite for entering new markets and launching new business models.”
+                        </p>
+
+                    </div>
+                    <h4 class="text-xl lg:text-3xl font-semibold text-[#070113] mt-10">Results</h4>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-6">
+                            Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>                        
+                            <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-6">Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>
+                        </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="py-14 lg:py-24">
+        <div class="container mx-auto">
+            <div class=" grid grid-row-2 lg:grid-cols-2 gap-8">
+                <div>
+
+                    <h1 class="leading-[60px] wow animate__animated animate__fadeInLeft"><span
+                            class=" text-3xl lg:text-5xl font-semibold bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0.7)_100%)] bg-clip-text text-transparent">
+                            One platform</span><br>
+                        <span
+                            class="text-3xl lg:text-5xl font-semibold bg-[linear-gradient(180deg,#3BEEE2_0%,rgba(5,161,148,0.7)_100%)] bg-clip-text text-transparent">
+                            For Every Industry</span>
+                    </h1>
+                </div>
+                <div class="flex items-end lg:justify-end  wow animate__animated animate__fadeInRight">
+
+                    <button
+                        class="prev h-12 w-12 rounded-full text-black bg-white hover:bg-[#cdfbff] border border-[#E6EAF4] hover:border-[#cdfbff] mr-4 flex justify-center items-center cursor-pointer transition-all duration-200 ease-in"><img
+                            src="/assets/images/icons/banner/left-icon.png" alt=""></button>
+                    <button
+                        class="next h-12 w-12 rounded-full text-black bg-white hover:bg-[#cdfbff] border border-[#E6EAF4] hover:border-[#cdfbff] mr-2 flex justify-center items-center cursor-pointer transition-all duration-200 ease-in"><img
+                            src="/assets/images/icons/banner/right-icon.png" alt=""></button>
+
+
+                </div>
+            </div>
+            
+            <div class="py-14 relative">
+                <div class="owl-carousel owl-theme">
+                    <div
+                        class="item max-w-[430px] min-h-[530px] bg-[#393939B2] text-white border border-[#B4B4B4] shadow-[0px_1px_3px_0px_rgba(16,24,40,0.10),_0px_1px_2px_0px_rgba(16,24,40,0.06)] p-6 rounded-3xl">
+                        <img src="/assets/images/icons/banner/carousel-1.png" alt="" class="rounded-2xl w-full">
+                        <p class="my-4 text-sm font-normal text-[#C6C6C6]">07 Mar, 2025 | Reading Time: 06 min
+                        </p>
+                        <h4 class="text-2xl font-bold">Transportation & Logistics</h4>
+                        <p class="mt-4 text-lg font-normal line-clamp-2">Get more by spending less on streamlining fleet operations.
+                        </p>
+
+                        <a href="/transport-and-logistics/" class="flex my-8 text-[#5ABFB5] hover:no-underline">Read More <img
+                                src="/assets/images/icons/chevron-right.svg" alt="" class="ml-2"></a>
+                    </div>
+
+                    <div
+                        class="item max-w-[430px] min-h-[530px] text-black bg-gradient-to-br from-[#D4FFFB] to-[#FFFFFF] border border-[#B4B4B4] shadow-[0px_1px_3px_0px_rgba(16,24,40,0.10),_0px_1px_2px_0px_rgba(16,24,40,0.06)] p-6 rounded-3xl">
+                        <img src="/assets/images/icons/banner/carousel-2.png" alt="" class="rounded-2xl w-full">
+                        <p class="my-4 text-sm font-normal text-[#6B6B6B]">07 Mar, 2025 | Reading Time: 06 min
+                        </p>
+                        <h4 class="text-2xl font-bold">E-commerce & Retail</h4>
+                        <p class="mt-4 text-lg font-normal line-clamp-2">We deliver efficiently and quickly. That’s why we call it
+                            E(asy)- Commerce!
+                        </p>
+
+                        <a href="/e-commerce/" class="flex my-8 text-[#5ABFB5] hover:no-underline">Know More <img
+                                src="/assets/images/icons/chevron-right.svg" alt="" class="ml-2"></a>
+                    </div>
+
+                    <div
+                        class="item max-w-[430px] min-h-[530px] text-white bg-[#393939B2] border border-[#B4B4B4] shadow-[0px_1px_3px_0px_rgba(16,24,40,0.10),_0px_1px_2px_0px_rgba(16,24,40,0.06)] p-6 rounded-3xl">
+                        <img src="/assets/images/icons/banner/carousel-3.png" alt="" class="rounded-2xl w-full">
+                        <p class="my-4 text-sm font-normal text-[#C6C6C6]">07 Mar, 2025 | Reading Time: 06 min
+                        </p>
+                        <h4 class="text-2xl font-bold">Construction</h4>
+                        <p class="mt-4 text-lg font-normal line-clamp-2">We have constructed a tailor made solution for you for GPS
+                            tracking of construction equipments/vehicles.
+                        </p>
+
+                        <a href="/construction/" class="flex my-8 text-[#5ABFB5] hover:no-underline">Read More <img
+                                src="/assets/images/icons/chevron-right.svg" alt="" class="ml-2"></a>
+                    </div>
+                    <div
+                        class="item max-w-[430px] text-black bg-gradient-to-br from-[#D4FFFB] to-[#FFFFFF] shadow-[0px_1px_3px_0px_rgba(16,24,40,0.10),_0px_1px_2px_0px_rgba(16,24,40,0.06)] p-6 rounded-3xl">
+                        <img src="/assets/images/icons/banner/carousel-1.png" alt="" class="rounded-2xl w-full">
+                        <p class="my-4 text-sm font-normal text-[#6B6B6B]">07 Mar, 2025 | Reading Time: 06 min
+                        </p>
+                        <h4 class="text-2xl font-bold">E-commerce & Retail</h4>
+                        <p class="mt-4 text-lg font-normal line-clamp-2">We have constructed a tailor made solution for you for GPS
+                            tracking of construction equipments/vehicles.
+                        </p>
+
+                        <a href="/e-commerce/" class="flex my-8 text-[#5ABFB5] hover:no-underline">Read More <img
+                                src="/assets/images/icons/chevron-right.svg" alt="" class="ml-2"></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+    <section class="py-14 px-8 lg:py-24 relative">
+        <div
+            class="absolute top-[30px] inset-0 m-auto w-[230px] h-[230px] rounded-[50%] bg-gradient-to-b from-[#3BEEE2] to-[#05A194] blur-[100px] transition-all duration-[850ms] ease-out pointer-events-none z-[-1]">
+        </div>
+
+
+        <div class="max-w-7xl mx-auto">
+
+            <h2 class="text-3xl lg:text-[56px] font-semibold text-center mb-14"> <span
+                    class="bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent">Frequently Asked
+                </span>
+                <span class="bg-gradient-to-b from-[#3BEEE2] to-[rgba(5,161,148,0.7)] bg-clip-text text-transparent">
+                    Questions</span>
+            </h2>
+
+            <!-- Accordion Item 1 -->
+            <div class="p-6 bg-[#2A3333] border border-[#606060] rounded-xl shadow-md mb-4">
+                <button class="accordion-button w-full flex justify-between items-center">
+                    <p class="text-2xl text-white">How long do payout take?</p>
+                    <span class="icon text-white transition-transform duration-300 border border-white p-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                            <path
+                                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="accordion-content hidden mt-2 text-gray-300">
+                    Material Tailwind is a framework that enhances Tailwind CSS with additional styles and components.
+                </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="p-6 bg-[#2A3333] border border-[#606060] rounded-xl shadow-md mb-4">
+                <button class="accordion-button w-full flex justify-between items-center">
+                    <p class="text-2xl text-white">Will I be charged tax?</p>
+                    <span class="icon text-white transition-transform duration-300 border border-white p-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                            <path
+                                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="accordion-content hidden mt-2 text-gray-300">
+                    Metafi is required to charge tax on certain products and services. Tax is charged based on your
+                    location and/ or your business/ tax status , which determines whether a product or service is
+                    subject to taxes, and the applicable tax rates.
+                </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="p-6 bg-[#2A3333] border border-[#606060] rounded-xl shadow-md">
+                <button class="accordion-button w-full flex justify-between items-center">
+                    <p class="text-2xl text-white">How do refunds work?</p>
+                    <span class="icon text-white transition-transform duration-300 border border-white p-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                            <path
+                                d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="accordion-content hidden mt-2 text-gray-300">
+                    You can install Material Tailwind using npm with the command: npm install material-tailwind-cs
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer inc file -->
+    <script src="/includes/inc-footer.js"></script>
+
+    
+    <!-- All JS -->
+    <script type="text/javascript" src="/includes/inc-footer-all-js.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+
+        function changeLanguage(lang, flag, language) {
+            // Update dropdown display
+            document.getElementById("selected-flag").src = "https://flagcdn.com/w40/" + flag;
+            document.getElementById("selected-language").innerText = language;
+            
+            // Hide dropdown menu after selection
+            document.getElementById("dropdown-menu").style.display = "none";
+
+            // Change Google Translate language
+            var googleTranslateDropdown = document.querySelector(".goog-te-combo");
+            if (googleTranslateDropdown) {
+                googleTranslateDropdown.value = lang;
+                googleTranslateDropdown.dispatchEvent(new Event('change'));
+            }
+        }
+
+        function toggleDropdown() {
+            let dropdown = document.getElementById("dropdown-menu");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function(event) {
+            let dropdown = document.getElementById("dropdown-menu");
+            let button = document.querySelector(".dropdown-btn");
+            if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
