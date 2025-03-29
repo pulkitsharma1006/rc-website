@@ -1,4 +1,4 @@
-new WOW().init();
+// new WOW().init();
 // Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
     var cursor = document.createElement("div"); // Create a div element
