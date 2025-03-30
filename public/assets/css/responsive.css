@@ -5,4 +5,14 @@ body {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .inside-shadow::before{
+    box-shadow: 6px 0 42px 10px rgba(0, 22, 21, 1);
+  }
+  .inside-shadow::after{
+    box-shadow: -6px 0 42px 10px rgba(0, 22, 21, 1);
+  }
+}
+
+
 
