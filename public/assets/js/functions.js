@@ -1,37 +1,5 @@
 $(document).ready(function(){
 
-    function showMenu(prmBut,prmMenu){
-        $(prmBut).hover(function(){
-            $(prmMenu).css({
-                "top": "0",  // Start position (above the button)
-                "display": "block",
-                "opacity": "1"
-            }).animate({
-                "top": "39px",  // Move down to normal position
-                "opacity": "1"
-            }, 600); // Animation duration (300ms)
-            $(this).addClass("active");
-        }, function(){
-            $(prmMenu).css({"display": "none", "opacity": "0"});
-            $(this).removeClass("active");
-        });
-
-        $(prmMenu).hover(function(){
-            $(this).show();
-            $(prmBut).addClass("active");
-        }, function(){
-            $(this).hide();
-            $(prmBut).removeClass("active");
-        });
-    }
-
-        showMenu(".m1but",".smdiv1");
-        showMenu(".m2but",".smdiv2");
-        showMenu(".m3but",".smdiv3");
-        showMenu(".m4but",".smdiv4");
-        showMenu(".m5but",".smdiv5");
-        showMenu(".m6but",".smdiv6");
-
         /*mobile menu | Start*/
 	$(document).on('click',".btnmenu",function() {
 		$('.mobmenucont').stop(true, true).animate({left:0}, 200);
