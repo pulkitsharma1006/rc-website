@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Roadcast – Error</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <meta name="description"
+        content="Roadcast is a new-age Saas based logistics automation platform. We offer hyperlocal solutions for businesses, including courier and parcel services and ecommerce support. Real-time fleet management. GPS Tracking.">
+    <meta name="keywords"
+        content="best courier service, delivery courier, international shipping logistics, out for delivery, deliveries food, grocery delivery app, e commerce, ecommerce business, gps tracker, fleet tracking">
+    <link rel="shortcut icon" href="/static/img/favicon.png" type="image/x-icon">
+
+    <!-- Social Media Share -->
+    <script type="text/javascript" src="/includes/inc-social-media-share.js"></script>
+
+    <!-- All CSS  -->
+    <script type="text/javascript" src="/includes/inc-all-css.js"></script>
+    <!-- End Google Tag Manager -->
+
+    <style>
+        @keyframes gradientAnimation {
+    0% { background-position: 0% 25%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animated-404 {
+    font-size: 10rem; /* Equivalent to text-5xl */
+    font-weight: 500;
+    text-align: center;
+
+    /* Gradient Background */
+    background-image: linear-gradient(90deg, #3BEEE2, #05A194, #3BEEE2);
+    background-size: 300% 300%;
+    
+    /* Text Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Animation */
+    animation: gradientAnimation 3s infinite linear;
+}
+
+
+    </style>
+    </head>
+
+<body class="pt-14">
+
+    <!-- Languages start here -->
+    <div id="google_translate_element" style="display: none;"></div>
+    <div class="language-dropdown">
+        <div class="dropdown-btn" onclick="toggleDropdown()"><img src="https://flagcdn.com/w40/gb.png"
+                id="selected-flag"><span id="selected-language">English</span></div>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <div onclick="changeLanguage('en', 'gb.png', 'English')"><img src="https://flagcdn.com/w40/gb.png"> English
+            </div>
+            <div onclick="changeLanguage('ar', 'sa.png', 'Arabic')"><img src="https://flagcdn.com/w40/sa.png"> Arabic
+            </div>
+            <div onclick="changeLanguage('fr', 'fr.png', 'French')"><img src="https://flagcdn.com/w40/fr.png"> French
+            </div>
+            <div onclick="changeLanguage('de', 'de.png', 'German')"><img src="https://flagcdn.com/w40/de.png"> German
+            </div>
+            <div onclick="changeLanguage('hi', 'in.png', 'Hindi')"><img src="https://flagcdn.com/w40/in.png"> Hindi
+            </div>
+            <div onclick="changeLanguage('it', 'it.png', 'Italian')"><img src="https://flagcdn.com/w40/it.png"> Italian
+            </div>
+            <div onclick="changeLanguage('ja', 'jp.png', 'Japanese')"><img src="https://flagcdn.com/w40/jp.png">
+                Japanese</div>
+            <div onclick="changeLanguage('zh-CN', 'cn.png', 'Mandarin')"><img src="https://flagcdn.com/w40/cn.png">
+                Mandarin</div>
+            <div onclick="changeLanguage('ru', 'ru.png', 'Russian')"><img src="https://flagcdn.com/w40/ru.png"> Russian
+            </div>
+            <div onclick="changeLanguage('es', 'es.png', 'Spanish')"><img src="https://flagcdn.com/w40/es.png"> Spanish
+            </div>
+            <div onclick="changeLanguage('th', 'th.png', 'Thai')"><img src="https://flagcdn.com/w40/th.png"> Thai</div>
+            <div onclick="changeLanguage('vi', 'vn.png', 'Vietnamese')"><img src="https://flagcdn.com/w40/vn.png">
+                Vietnamese</div>
+        </div>
+    </div>
+    <!-- Languages end here -->
+
+    <!-- Header start here -->
+    <script src="/includes/inc-header.js"></script>
+    <!-- Header end here -->
+
+    <section class="h-screen flex justify-center items-center">
+        <div class="text-center">
+            <h2 class="animated-404">404</h2>
+            <p class="text-3xl font-bold">Everything’s On Track… Except This Page!</p>
+            <p class="my-4 text-xl font-normal text-[#c6c6c6]">Looks like you’ve reached a road we haven’t built yet. <br class="hidden md:block"> But don’t worry — everything else is exactly where it should be.</p>
+            <a href="index.html" class="c-btn btn-1 my-4">Take Me Home</a>
+        </div>
+    </section>
+
+
+    <!-- All JS -->
+    <script type="text/javascript" src="/includes/inc-footer-all-js.js"></script>
+    <script>
+    new WOW().init();
+
+
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+
+        function changeLanguage(lang, flag, language) {
+            // Update dropdown display
+            document.getElementById("selected-flag").src = "https://flagcdn.com/w40/" + flag;
+            document.getElementById("selected-language").innerText = language;
+
+            // Hide dropdown menu after selection
+            document.getElementById("dropdown-menu").style.display = "none";
+
+            // Change Google Translate language
+            var googleTranslateDropdown = document.querySelector(".goog-te-combo");
+            if (googleTranslateDropdown) {
+                googleTranslateDropdown.value = lang;
+                googleTranslateDropdown.dispatchEvent(new Event('change'));
+            }
+        }
+
+        function toggleDropdown() {
+            let dropdown = document.getElementById("dropdown-menu");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", function (event) {
+            let dropdown = document.getElementById("dropdown-menu");
+            let button = document.querySelector(".dropdown-btn");
+            if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+                dropdown.style.display = "none";
+            }
+        });
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

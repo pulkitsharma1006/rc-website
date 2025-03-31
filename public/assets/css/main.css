@@ -7,6 +7,7 @@ body {
   background-color: #001615;
   color: #fff;
   overflow-x: hidden;
+  transition: all .5s;
 }
 /* *{ transition:all .5s !important;}*/
 
@@ -190,34 +191,14 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   }
 }
 
-.animate-slide {
-  animation: slide 20s linear infinite;
-}
-
-.social-icons li a svg path{
-  fill: #999;
-  transform: all 0.5s fade-in;
-}
-
-.social-icons li a.flipkart:hover svg path{
-  fill: #F7A200;
-}
-.social-icons li a.linkdin:hover svg path{
-  fill: #0077B5;
-}
-.social-icons li a.instagram:hover svg path{
-  fill : #C13584;
-}
-
-.social-icons li a.amazon:hover svg path{
-  fill : #FF9900;
-}
-.social-icons li a.you_tube:hover svg path{
-  fill : #FF0000;
-}
-.social-icons li a.facebook:hover svg path {
-fill : #1877F2
-}
+.animate-slide {animation: slide 20s linear infinite;}
+.social-icons li a svg path{fill: #999;transform: all 0.5s fade-in;}
+.social-icons li a.flipkart:hover svg path{fill: #F7A200;}
+.social-icons li a.linkdin:hover svg path{fill: #0077B5;}
+.social-icons li a.instagram:hover svg path{fill : #C13584;}
+.social-icons li a.amazon:hover svg path{fill : #FF9900;}
+.social-icons li a.you_tube:hover svg path{fill : #FF0000;}
+.social-icons li a.facebook:hover svg path {fill : #1877F2}
 
 /* Testimonials CSS start here */
 .Marquee {
@@ -409,7 +390,7 @@ fill : #1877F2
   left: 0;
   top: 0;
   transform: translate(calc(-90% + 15px), -0%);
-  z-index: -1;
+  z-index: -2;
 }
 
 /* Dropdown Styling */
@@ -465,4 +446,75 @@ fill : #1877F2
 
 .goog-te-banner-frame.skiptranslate {
   display: none !important;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes textColorAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.custom-heading {
+  font-size: 1.875rem; /* Equivalent to text-3xl */
+  line-height: normal;
+  opacity: 0; /* Initially hidden */
+  animation: fadeInUp 1s ease-in-out 1s forwards;
+  text-align: center;
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .custom-heading {
+      font-size: 4rem; /* Equivalent to text-6xl */
+      line-height: 80px;
+  }
+}
+
+/* Gradient Text Effect with Animation */
+.gradient-text-light, 
+.gradient-text-bold {
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textColorAnimation 3s infinite linear;
+}
+
+/* Gradient for Each Text */
+.gradient-text-light {
+  background-image: linear-gradient(45deg, #FFFFFF, rgba(255, 255, 255, 0.7), #d9fbee);
+}
+
+.gradient-text-bold {
+  background-image: linear-gradient(45deg, #3BEEE2, rgba(5, 161, 148, 0.7), #028090);
+  font-weight: 600;
+
+}
+
+
+.effect_know_more {
+  display: flex;
+  margin-top: 1.5rem; /* 24px */
+  margin-bottom: 1.5rem; /* 24px */
+  background-image: linear-gradient(45deg, #7dd8cf, #00a896, #028090);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradient 3s infinite linear;
+}
+
+@keyframes textGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
