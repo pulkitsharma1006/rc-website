@@ -96,10 +96,6 @@ $(document).ready(function(){
             }
         });
     });
-
-
-
-
     $(document).ready(function () {
         let lastScrollTop = 0;
         let animationTriggered = false;
@@ -308,6 +304,10 @@ $(document).ready(function(){
         }
             
     });
+
+
+
+    
     
 
 

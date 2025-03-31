@@ -451,7 +451,7 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 @keyframes fadeInUp {
   from {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(30px);
   }
   to {
       opacity: 1;
