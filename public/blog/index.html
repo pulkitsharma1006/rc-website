@@ -140,11 +140,7 @@
                     <h3 class="text-[52px] text-[#0D0D12] my-4 leading-[1.2] line-clamp-2">Roadcast believes IoT in Transportation can mitigate Cyberattacks</h3>
                     <p class="text-lg text-[#666d80] font-normal mb-10 line-clamp-3">The Internet of Things (IoT) is revolutionizing transportation, addressing challenges like slow tech adoption, poor infrastructure, rising fuel costs, and a shortage of skilled professionals. IoT enhances efficiency, optimizes vehicle performance, and enables real-time monitoring.</p>
                     <div class="flex items-center gap-8">
-                        <div class="flex gap-4">
-                            <img src="https://s3-alpha-sig.figma.com/img/5b04/4dd2/9c9b38c3fca4b8b52714bb6225d94646?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=GknGPFIQwAHeSG5tJi3~SKZCbJwQ3vKrlkPzbyfWWEA3vlUKI~GXOxZYzPwZndfqR7VHxpJVudmHKdd6rifnFFZbFfMi2XC-Ji4RqHGZ-CzvecOcYDOfNOK5ly1EmvOUebwR8U~6cX-Q7ZiqvUuZaX3JkE1Uh~GRg055zDsy7fVwMP5s0Pm-G7qX-3jLifB6pYixoqpy6HMp3OBH04HLiyXlyIye~sMB~IWq-~-vjt3QyMb6HZ3HdythFmACtJwo~fofNYjDoTypmFsS-lbNKE94W6RUCipQ3AoePTaq8t51V3bMstgNpKSEmIvPvIYnVu~xB0JByOQgicNKAogeyA__" alt="" class="rounded-full h-8 w-8">
-                            <p class="text-lg text-[#666D80]">Sesar Varma</p>
-                        </div>
-                        <p class="text-lg text-[#666D80]">• &nbsp; &nbsp;  March 24, 2025</p>
+                        <p class="text-lg text-[#666D80]">Reading Time: 04 min. | March 24, 2025</p>
                     </div>
                 </div>
                 <div class="">
@@ -154,49 +150,29 @@
         </div>
     </section>
 
-    <div>
-        <button class="filter-btn" data-category="all">All</button>
-        <button class="filter-btn" data-category="category1">Category 1</button>
-        <button class="filter-btn" data-category="category2">Category 2</button>
-        <button class="filter-btn" data-category="category3">Category 3</button>
-    </div>
-
-    <!-- Items List -->
-    <div id="items-container">
-        <div class="item category1">Item 1 - Category 1</div>
-        <div class="item category2">Item 2 - Category 2</div>
-        <div class="item category3">Item 3 - Category 3</div>
-        <div class="item category1">Item 4 - Category 1</div>
-        <div class="item category2">Item 5 - Category 2</div>
-        <div class="item category3">Item 6 - Category 3</div>
-        <div class="item category1">Item 7 - Category 1</div>
-        <div class="item category2">Item 8 - Category 2</div>
-        <div class="item category3">Item 9 - Category 3</div>
-    </div>
-
-    <!-- Pagination Controls -->
-    <div>
-        <button id="prevPage">Previous</button>
-        <span id="page-info"></span>
-        <button id="nextPage">Next</button>
-    </div>
-
     <section class="py-14 lg:py-24 bg-white">
         <div class="container mx-auto">
             <div class="grid grid-row-s-6 xl:grid-cols-6 gap-8">
                 <div>
                     <p class="text-xl font-normal text-[#0D0D12]"> Explore by Topics</p>
+                    <!-- Filter Section -->
                     <div class="grid grid-cols-1 gap-2 my-7">
-                        <a href="/blog/" class="px-4 border-l border-[#14A99C] text-[#14A99C]">All Blogs</a>
-                        <!-- <a href="/blog/" class="px-4 text-[#818898]">Products</a>
-                        <a href="/blog/" class="px-4 text-[#818898]">Company</a>
-                        <a href="/blog/" class="px-4 text-[#818898]">Engineering</a>
-                        <a href="/blog/" class="px-4 text-[#818898]">Security</a>
-                        <a href="/blog/" class="px-4 text-[#818898]">Compliance</a> -->
+                        <a href="javascript:void(0)" class="px-4 border-l border-[#14A99C] text-[#14A99C]" onclick="filterBlogs(''); changeActiveClass(this)">All Blogs</a>
+                        <a href="javascript:void(0)" class="px-4 text-[#818898]" onclick="filterBlogs('Product'); changeActiveClass(this)">Products</a>
+                        <a href="javascript:void(0)" class="px-4 text-[#818898]" onclick="filterBlogs('Company'); changeActiveClass(this)">Company</a>
+                        <a href="javascript:void(0)" class="px-4 text-[#818898]" onclick="filterBlogs('Engineering'); changeActiveClass(this)">Engineering</a>
+                        <a href="javascript:void(0)" class="px-4 text-[#818898]" onclick="filterBlogs('Security'); changeActiveClass(this)">Security</a>
+                        <a href="javascript:void(0)" class="px-4 text-[#818898]" onclick="filterBlogs('Compliance'); changeActiveClass(this)">Compliance</a>
                     </div>
                 </div>
                 <div id="blog-container" class="row-span-5 xl:col-span-5 grid md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12">
                 </div>
+                
+            </div>
+            <div id="pagination" class="flex items-center justify-center space-x-2 mt-6">
+                <button id="prev-btn" class="rounded-full disabled:opacity-50 disabled:cursor-not-allowed mr-5"><img src="/assets/images/icons/icons-next.svg" alt="" class="rotate-180"></button>
+                <div id="page-numbers" class="flex space-x-2"></div>
+                <button id="next-btn" class="rounded-full disabled:opacity-50 disabled:cursor-not-allowed ml-5"><img src="/assets/images/icons/icons-next.svg" alt=""></button>
             </div>
         </div>
     </section>
