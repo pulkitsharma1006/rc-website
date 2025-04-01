@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140.99" height="105.66" viewBox="0 0 140.99 105.66">
+  <title>main_capturing</title>
+  <g>
+    <rect x="76.06" y="14.25" width="2.39" height="2.12" style="stroke: #000;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <rect x="84.89" y="14.25" width="2.39" height="2.12" style="stroke: #000;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <rect x="93.72" y="14.25" width="2.39" height="2.12" style="stroke: #000;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <path d="M719.61,149.1H823.19V71.74h-128V69.63h30.9v-20H688.43V149.1h31.18v2.12H686.32V47.55h41.85V69.63h86.19V54.08H734.88V52h81.59V69.63h8.83v81.59H717.59" transform="translate(-685.32 -46.55)" style="stroke: #000;stroke-miterlimit: 10;stroke-width: 2px"/>
+  </g>
+</svg>
