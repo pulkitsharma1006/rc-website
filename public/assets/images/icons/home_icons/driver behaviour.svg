@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #4ea69c;
+        stroke-width: 2.31px;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-6 {
+        fill: rgba(49, 114, 107, .1);
+      }
+
+      .cls-7 {
+        fill: #4ea69c;
+      }
+
+      .cls-4 {
+        stroke-miterlimit: 13.33;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="-744.27" cy="925.54" fx="-744.27" fy="925.54" r="1" gradientTransform="translate(-3544.7 55689.69) rotate(45) scale(45.25 -45.25) skewX(-4.29)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#63d1c4" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#63d1c4" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="12.97" y="12.85" width="36.57" height="36.57"/>
+    </clipPath>
+  </defs>
+  <g>
+    <rect class="cls-6" width="64" height="64"/>
+    <rect class="cls-5" width="64" height="64" rx="15.41" ry="15.41"/>
+  </g>
+  <g id="g1164">
+    <g id="g1166">
+      <g class="cls-8">
+        <g id="g1168">
+          <g id="g1174">
+            <path id="path1176" class="cls-3" d="M22.11,23.42c0-5.05,4.09-9.14,9.14-9.14s9.14,4.09,9.14,9.14-4.09,9.14-9.14,9.14-9.14-4.09-9.14-9.14Z"/>
+          </g>
+          <g id="g1178">
+            <path id="path1180" class="cls-7" d="M28.04,49.42c0-1.78,1.44-3.21,3.21-3.21s3.21,1.44,3.21,3.21h-6.43Z"/>
+          </g>
+          <g id="g1182">
+            <path id="path1184" class="cls-4" d="M22.11,49.42c0-5.05,4.09-9.14,9.14-9.14s9.14,4.09,9.14,9.14"/>
+          </g>
+          <g id="g1186">
+            <path id="path1188" class="cls-2" d="M14.4,49.42c0-9.31,7.55-16.86,16.86-16.86s16.86,7.55,16.86,16.86"/>
+          </g>
+          <g id="g1190">
+            <path id="path1192" class="cls-4" d="M29.76,47.92l-4.39-4.39"/>
+          </g>
+          <g id="g1194">
+            <path id="path1196" class="cls-4" d="M37.15,43.53l-4.46,4.46"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
