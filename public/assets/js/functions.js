@@ -112,8 +112,8 @@ $(document).ready(function(){
                 // Adjust width based on scroll position
                 let scrollPercentage = (scrollTop / ($(document).height() - $(window).height())) * 100;
                 
-                let progressBar1Width = Math.min(30 + (scrollPercentage * 0.5), 80) + "%"; // 30% → 80%
-                let progressBar2Width = Math.max(80 - (scrollPercentage * 0.5), 30) + "%"; // 80% → 30%
+                let progressBar1Width = Math.min(80 + (scrollPercentage * 0.5), 30) + "%"; // 30% → 80%
+                let progressBar2Width = Math.max(30 - (scrollPercentage * 0.5), 80) + "%"; // 80% → 30%
 
                 $(".progress-bar-1").css("width", progressBar1Width);
                 $(".progress-bar-2").css("width", progressBar2Width);

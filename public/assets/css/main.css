@@ -19,6 +19,44 @@ body {
 
 .container {max-width: 100% !important; margin: 0 100px; width: auto;}
 
+.title_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-top: 200px;
+  margin-bottom: 80px;
+}
+
+.main-heading {
+  line-height: normal;
+  animation: fadeInUp 1s ease-in-out 1s forwards;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Gradient Text Effect with Animation */
+.gradient-1, 
+.gradient-2 {
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textColorAnimation 3s infinite linear;
+}
+
+/* Gradient for Each Text */
+.gradient-1 {
+  background-image: linear-gradient(45deg, #FFFFFF, rgba(255, 255, 255, 0.7), #d9fbee);
+  font-size: 62px;
+}
+
+.gradient-2 {
+  background-image: linear-gradient(45deg, #3BEEE2, rgba(5, 161, 148, 0.7), #028090);
+  font-weight: 500;
+  font-size: 72px;
+
+}
+
 .border-before{
   position: relative;
 }
@@ -456,41 +494,7 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   100% { background-position: 0% 50%; }
 }
 
-.custom-heading {
-  font-size: 1.875rem; /* Equivalent to text-3xl */
-  line-height: normal;
-  opacity: 0; /* Initially hidden */
-  animation: fadeInUp 1s ease-in-out 1s forwards;
-  text-align: center;
-}
 
-/* Large screens */
-@media (min-width: 1024px) {
-  .custom-heading {
-      font-size: 4rem; /* Equivalent to text-6xl */
-      line-height: 80px;
-  }
-}
-
-/* Gradient Text Effect with Animation */
-.gradient-text-light, 
-.gradient-text-bold {
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textColorAnimation 3s infinite linear;
-}
-
-/* Gradient for Each Text */
-.gradient-text-light {
-  background-image: linear-gradient(45deg, #FFFFFF, rgba(255, 255, 255, 0.7), #d9fbee);
-}
-
-.gradient-text-bold {
-  background-image: linear-gradient(45deg, #3BEEE2, rgba(5, 161, 148, 0.7), #028090);
-  font-weight: 600;
-
-}
 
 
 .effect_know_more {
