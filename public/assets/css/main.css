@@ -12,8 +12,8 @@ body {
 /* *{ transition:all .5s !important;}*/
 
 /* Works on Firefox */
-*{scrollbar-width:thin; scrollbar-color:#14A99C #000;}
-*::-webkit-scrollbar {width:10px;}
+/* *{scrollbar-width:thin; scrollbar-color:#14A99C #000;} */
+*::-webkit-scrollbar {width:8px;}
 *::-webkit-scrollbar-track {background:#000;}
 *::-webkit-scrollbar-thumb {background-color:#14A99C; border:0; border-radius:8px;}
 
@@ -127,15 +127,6 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 .p-head {color:#0D0D12;}
 
 .v-frame {background: url('/assets/images/icons/frames/video_frame.png') no-repeat 0 0; background-size: cover; border-radius: 2rem; position: relative;}
-
-
-@media (max-width:1110px){
-  header nav, .tp-btns {display: none;}
-  .menu {display:block;}
-}
-  @media (max-width:1023px){
-  .container {margin: 0 24px;}
-}
 
 .owl-carousel .owl-item img {
   width: 48px;
@@ -395,8 +386,8 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 
 /* Dropdown Styling */
 .language-dropdown {top:50%;
-  position: fixed; left:0; margin: -16px 0 0 0;
-  display: inline-block; z-index: 99999;
+  position: fixed; left:0; margin: 28px 0 0 0;
+  display: inline-block; z-index: 9999;
 }
 
 .dropdown-btn {
@@ -419,7 +410,7 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   position: absolute;
   background-color: #000;
   width: 140px;
-  max-height: 450px;
+  max-height: 240px;
   overflow-y: auto;
   display: none;
   z-index: 99999; border-radius: 0 6px 6px 0; margin-top: -32px;
@@ -428,7 +419,7 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 .dropdown-menu div {
   display: flex;
   align-items: center;
-  padding: 4px 8px;
+  padding: 6px 8px;
   cursor: pointer; font-size: 12px;
   transition: background 0.3s;
 }
@@ -517,4 +508,20 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+
+@media (max-width:1110px) {
+  header nav, .tp-btns {display: none;}
+  .menu {display:block;}
+  header .container {margin: 0 24px !important;}
+  .language-dropdown {top: 18px; left: auto; margin: 0; right: 84px;}
+  .dropdown-btn {border-radius: 6px;}
+  .dropdown-menu {border-radius: 6px; margin-top: -31px; margin-left: -1px;}
+
+
+}
+
+@media (max-width:1023px) {
+  .container {margin: 0 24px;}
 }
