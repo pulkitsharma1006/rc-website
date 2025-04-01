@@ -386,7 +386,7 @@
                             class="mt-2 p-2 w-full rounded-lg placeholder:text-[#A4ACB9] text-[#36394A] text-base bg-white shadow-[0px_0px_0px_1px_#09194821,0px_1px_2px_0px_#12376914]"></textarea>
                         <span class="error" id="messageError"></span>
                     </div>
-                    <button id="submitBtn" class="c-btn btn-1 g-recaptcha btn_three"data-sitekey="6LcL8e8UAAAAAL1yIOTObSlMiVriUfOwqmGEi-v8" 
+                    <button id="submitBtn" class="c-btn btn-1 g-recaptcha btn_three"
                     >Send Message</button>
 
                     <script>
@@ -717,10 +717,10 @@
             const storedTimestamp = localStorage.getItem(formSubmitKey);
             const currentTime = new Date().getTime();
 
-            if (storedTimestamp && (currentTime - storedTimestamp) < 24 * 60 * 60 * 1000) {
-                alert("You have already submitted the form. Please wait 24 hours.");
-                return false;
-            }
+            // if (storedTimestamp && (currentTime - storedTimestamp) < 24 * 60 * 60 * 1000) {
+            //     alert("You have already submitted the form. Please wait 24 hours.");
+            //     return false;
+            // }
 
             submitBtn.innerText = "Sending...";
 
@@ -728,21 +728,27 @@
             const formData = new FormData(this);
 
             fetch("https://prod-s2.track360.net.in/api/v1/auth/contact-details-website", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                localStorage.setItem(formSubmitKey, currentTime);
-                submitBtn.innerText = "Sent!";
-                document.getElementById("contactForm").reset();
-                alert("Form submitted successfully!");
-                window.location.href = "https://roadcast.in/thanks.html";
-            })
-            .catch(error => {
-                submitBtn.innerText = "Failed!";
-                alert("Submission failed. Please try again.");
-            });
+    method: "POST",
+    body: formData
+})
+.then(response => {
+    console.log(response,'ress');
+    
+    // Check if the response status is in the success range (200-299)
+    if (!response.ok) {
+        submitBtn.innerText = "Failed!";
+        throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    localStorage.setItem(formSubmitKey, currentTime);
+    submitBtn.innerText = "Sent!";
+    document.getElementById("contactForm").reset();
+    
+    //Show success message and redirect
+    // alert("Form submitted successfully!");
+    window.location.href = "https://roadcast.in/thanks.html";
+    
+
+})
         });
 </script>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
