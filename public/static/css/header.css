@@ -1,0 +1,20 @@
+.sticky_logo img:nth-child(1) {
+    display: none !important;
+}
+
+.sticky_logo img:nth-child(2) {
+    display: block !important;
+}
+.nav-link {
+    color: #051441 !important;
+}
+
+.menu>.nav-item>.nav-link:before {
+    background: #17c7bd;
+}
+
+.menu_four .btn_get {
+    border-color: #17C7BD !important;
+    background: #17C7BD !important;
+    color: #ffffff !important;
+}
