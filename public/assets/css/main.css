@@ -173,6 +173,13 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   width: 24px !important;
 }
 
+.blog-content p {color:#666D80; font-style: normal; font-size: 1.125rem;}
+.blog-content p strong {color:#0D0D12; font-weight: 400;}
+.blog-content p.mb-10 {margin-bottom: 2rem;}
+.blog-content p.mb-30 {margin-bottom: 2rem;}
+.blog-content ul {list-style-type: disc; margin: 0 0 2rem 2rem;}
+.blog-content ol {list-style-type: decimal; margin: 0 0 2rem 2rem;}
+.blog-content ul li, .blog-content ol li {color:#666D80; margin-bottom: 0.5rem; font-size: 1.125rem;}
 
 
 .inside-shadow::before{
