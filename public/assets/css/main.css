@@ -155,8 +155,8 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   visibility: visible;
 }
 
-.cl-logos img {filter: brightness(0) invert(1); transition:all .3s ease-in;}
-.cl-logos img:hover {filter: none; scale: 1.3; }
+.cl-logos img {filter: brightness(0) invert(1); transition:all .3s ease-in; opacity: 35% !important;}
+.cl-logos img:hover {filter: none; scale: 1.2; opacity: 100% !important;}
 
 
 .p-txt {color:#666D80;}
