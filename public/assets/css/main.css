@@ -26,7 +26,7 @@ body {
 
 .main-heading {
   line-height: normal;
-  animation: fadeInUp 1s ease-in-out 1s forwards;
+  animation: fadeInUp 0.5s ease-in-out 0.5s forwards;
   text-align: center;
   text-transform: capitalize;
 }
@@ -37,7 +37,7 @@ body {
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textColorAnimation 3s infinite linear;
+  animation: textColorAnimation 2s infinite linear;
 }
 
 /* Gradient for Each Text */
