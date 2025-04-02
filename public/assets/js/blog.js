@@ -42,7 +42,7 @@ function renderBlogs() {
 
     paginatedBlogs.forEach(blog => {
         const blogElement = document.createElement("div");
-        blogElement.classList.add("bg-white", "shadow-md", "p-4", "rounded-xl");
+        blogElement.classList.add("bg-white", "shadow-md", "p-4", "pb-8", "rounded-xl", "border", "border-[#eeeeee]");
         blogElement.innerHTML = `
             <a href="/blog/${blog.link}" class="block">
                 <img src="/assets/images/blog/${blog.image}" alt="" class="w-full object-cover rounded-2xl mb-4">
@@ -85,7 +85,7 @@ function renderPagination() {
     pages.forEach(page => {
         const pageButton = document.createElement("button");
         pageButton.innerText = page;
-        pageButton.classList.add("h-12", "w-12", "rounded-full", "text-gray-700", "hover:bg-[#14A99C]", "hover:text-white", "transition");
+        pageButton.classList.add("h-12", "w-12", "rounded-full", "text-gray-700", "cursor-pointer", "hover:bg-[#14A99C]", "hover:text-white", "transition");
 
         if (page === currentPage) {
             pageButton.classList.add("bg-[#14A99C]", "text-white");
