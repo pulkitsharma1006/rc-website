@@ -378,6 +378,41 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 }
 /* Testimonials CSS end here */
 
+.custom-button {
+  position: relative;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background: linear-gradient(353deg, #198A81 17.51%, #23BBAD 100%);
+}
+
+.custom-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; border-radius: 8px;
+  background: linear-gradient(53deg, #23BBAD 17.51%, #198A81 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.custom-button:hover::before {
+  opacity: 1;
+}
+
+.button-text {
+  position: relative;
+  z-index: 10;
+}
+
 .c-btn {display: inline-block;
   font-size: 0.9rem;
   padding: 0.6rem 1.4rem;
