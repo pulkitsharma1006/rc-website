@@ -6,6 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/assets/images/favicon.png" as="image">
+    <link rel="preload" href="/assets/images/sprite.svg" as="image">
+    <link rel="preload" href="/includes/inc-all-css.js" as="script">
+    <link rel="preload" href="/includes/inc-header.js" as="script">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//translate.google.com">
+    <link rel="dns-prefetch" href="//static.hotjar.com">
+    <link rel="dns-prefetch" href="//connect.facebook.net">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://translate.google.com">
+    <link rel="preconnect" href="https://static.hotjar.com">
+    <link rel="preconnect" href="https://connect.facebook.net">
+    
     <meta name="description" content="Roadcast is a new-age Saas based logistics automation platform. We offer hyperlocal solutions for businesses, including courier and parcel services and ecommerce support. Real-time fleet management. GPS Tracking.">
     <meta name="keywords" content="best courier service, delivery courier, international shipping logistics, out for delivery, deliveries food, grocery delivery app, e commerce, ecommerce business, gps tracker, fleet tracking">
     
@@ -105,29 +124,39 @@
     <!-- Header start here -->
     <script src="/includes/inc-header.js"></script>
     <!-- Header end here -->
-    <section class="lg:py-24 py-14 lg:pb-4 bg-white">
+    <section class="lg:py-24 py-14 lg:pb-4 bg-white" role="region" aria-label="Case Study Hero">
         <div class="container mx-auto px-4 lg:px-12">
             <div class="relative w-full rounded-md overflow-hidden lg:h-[600px] mb-8">
-                <!-- Image -->
-                <img src="https://s3-alpha-sig.figma.com/img/5d0e/2997/5f81660dba4bf9585417ef495f574f31?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=p1Hd-RSB~5Dy177KEVUdwJDVrzqQLhsmrTRGZpl4L5vO6YHOvCTf8nH1EOX1oOrKksaQcSEKdUhASIOjWvfl03CRnCRXfJGbsId4yC7eTSQGDDNPqxaQMzayY7Ni21~S~eg0eE8~g-mUgt9UVL73DbQKcChlSaaYTIuLWigCfkiDAgDRnngIaeln4fI2gDk83PNZbWODHgAopI4UuhHHkgAIw5C6tz1gTd7YbcUI0YTZyAf1J9C810cRtMrXo0Tf06o1Qogkm7fv0p6Do4wSTSKVp4EwXJnlCY1yuQwB1QQjtR06pnMCiGAxHPh669P~wgPzhUZd87j4HpLVZNt9Fg__" 
-                    alt="" class="w-full h-full object-cover">
+                <!-- Optimized hero image -->
+                <img loading="lazy" 
+                    src="https://s3-alpha-sig.figma.com/img/5d0e/2997/5f81660dba4bf9585417ef495f574f31?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=p1Hd-RSB~5Dy177KEVUdwJDVrzqQLhsmrTRGZpl4L5vO6YHOvCTf8nH1EOX1oOrKksaQcSEKdUhASIOjWvfl03CRnCRXfJGbsId4yC7eTSQGDDNPqxaQMzayY7Ni21~S~eg0eE8~g-mUgt9UVL73DbQKcChlSaaYTIuLWigCfkiDAgDRnngIaeln4fI2gDk83PNZbWODHgAopI4UuhHHkgAIw5C6tz1gTd7YbcUI0YTZyAf1J9C810cRtMrXo0Tf06o1Qogkm7fv0p6Do4wSTSKVp4EwXJnlCY1yuQwB1QQjtR06pnMCiGAxHPh669P~wgPzhUZd87j4HpLVZNt9Fg__" 
+                    alt="Case Study Hero Image" 
+                    class="w-full h-full object-cover"
+                    role="img">
                 
                 <!-- Overlay -->
-                <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-80"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-80" role="presentation"></div>
             
                 <!-- Text -->
                 <div class="absolute bottom-18 left-18 text-white text-lg font-bold">
-                    <h1 class="leading-[60px] text-2xl lg:text-5xl wow animate__ animate__fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <h1 class="leading-[60px] text-2xl lg:text-5xl wow animate__ animate__fadeInUp animated" 
+                        data-wow-delay=".5s" 
+                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;"
+                        role="heading"
+                        aria-level="1">
                         <span class="font-normal bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0.7)_100%)] bg-clip-text text-transparent">
-                            Deblogging: Decoding  Insights</span><br>
+                            Decoding Insights</span><br>
                         <span class="font-semibold bg-[linear-gradient(180deg,#3BEEE2_0%,rgba(5,161,148,0.7)_100%)] bg-clip-text text-transparent"> 
-                            Blogs Blogs Blogs Blogs</span>
+                            Success Stories</span>
                     </h1>
-                    <p class="text-[#C6C6C6] font-normal text-base sm:text-lg mt-4 wow animate__ animate__fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">From fleets to heavy machinery, our fuel monitoring system ensures 
+                    <p class="text-[#C6C6C6] font-normal text-base sm:text-lg mt-4 wow animate__ animate__fadeInUp" 
+                       data-wow-delay=".6s" 
+                       style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;"
+                       role="doc-subtitle">
+                       From fleets to heavy machinery, our fuel monitoring system ensures 
                        <br class="hidden md:block"> accurate tracking and efficiency across all vehicle types.</p>
                 </div>
             </div>
-            
         </div>
     </section>
     <section class="bg-white">
@@ -139,33 +168,32 @@
                         <img src="https://s3-alpha-sig.figma.com/img/6c1d/fc5e/3fea0c75f87b551289232f0bc6d1d3d7?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=YsnnjnIPAy0H4IU26XiqAmLWqK5Erbx0aAkLpljO6PXI16zrIeBpRXYUgm6kthbkZXieOKmg0weTr6h157suveakTNPJd9qWUwAPfkpEOmtJl02TvUjUFy6~eTFIpgS~GKIdC7UON9qBZwi63a0H2NXbaxyzcVHMfGzE91TQmx7kU1SYCHm15JGld8dc0X5zQAE7-J2P0i-~jJKmVSUj8JnlqSQ-fFNRJkBu7s58dvrhrFAvoKGsemU0VIai8P93GRp44TPUixPbnD73q3M47H~P3ksIH1rclzHMQjhnRHiA5a8o26mTRAaPYgAfa4HyiRNUzbzATKwCmtJh6SckDQ__" alt="" class="h-12">
                         <hr class="my-9 border border-[#D8D9E0]">
                         <div class="grid grid-cols-1 gap-8">
-                            <div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
-                                    <p class="mt-2 text-base font-normal text-[#252422]">Location</p>
-                                </div>
-                                <p class="text-base font-normal text-[#8B8D98]">India, New Delhi</p>
+                            <!-- Location -->
+                            <div class="flex items-center gap-4">
+                                <svg class="h-4 w-4" aria-hidden="true">
+                                    <use xlink:href="/assets/images/sprite.svg#icon-location"></use>
+                                </svg>
+                                <p class="mt-2 text-base font-normal text-[#252422]">Location</p>
                             </div>
-                            
+                            <p class="text-base font-normal text-[#8B8D98]">India, New Delhi</p>
 
-                            <div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
-                                    <p class="mt-2 text-base font-normal text-[#252422]">Type</p>
-                                </div>
-                                <p class="text-base font-normal text-[#8B8D98]">Construction</p>
+                            <!-- Type -->
+                            <div class="flex items-center gap-4">
+                                <svg class="h-4 w-4" aria-hidden="true">
+                                    <use xlink:href="/assets/images/sprite.svg#icon-type"></use>
+                                </svg>
+                                <p class="mt-2 text-base font-normal text-[#252422]">Type</p>
                             </div>
+                            <p class="text-base font-normal text-[#8B8D98]">Construction</p>
 
-                            <div>
-
-                                <div class="flex items-center gap-4">
-                                    <img src="/assets/images/icons/icon-we_stand.svg" alt="" class="h-4">
-                                    <p class="mt-2 text-base font-normal text-[#252422]">Fleet Size</p>
-                                </div>
-                                <p class="text-base font-normal text-[#8B8D98] mt-1">1200</p>
+                            <!-- Fleet Size -->
+                            <div class="flex items-center gap-4">
+                                <svg class="h-4 w-4" aria-hidden="true">
+                                    <use xlink:href="/assets/images/sprite.svg#icon-fleet"></use>
+                                </svg>
+                                <p class="mt-2 text-base font-normal text-[#252422]">Fleet Size</p>
                             </div>
+                            <p class="text-base font-normal text-[#8B8D98] mt-1">1200</p>
                         </div>
                         <hr class="my-9 border border-[#D8D9E0]">
 
@@ -197,7 +225,7 @@
                             The CFO is ascending. Earlier this year, Fortune <a href="#" class="text-[#14A99C] underline"> reported</a> that in the first half of 2022, 8.1% of CFOs at Fortune 500 and S&P 500 companies were promoted to CEO up from 5.6% a decade earlier. The jump reflects how business success and financial agility have become inseparable.
                         </p>
                         <p class="text-[#666D80] text-lg font-normal mt-5 mb-2 lg:mb-5">
-                            It’s also consistent with our own recently released <a href="#" class="text-[#14A99C] underline"> CFO insights report,</a> which found that 68% of finance leaders believe that streamlining financial operations is an essential part of their company’s strategic growth. They see it as a prerequisite for entering new markets and launching new business models.
+                            It's also consistent with our own recently released <a href="#" class="text-[#14A99C] underline"> CFO insights report,</a> which found that 68% of finance leaders believe that streamlining financial operations is an essential part of their company's strategic growth. They see it as a prerequisite for entering new markets and launching new business models.
                         </p>
 
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center text-[#115D56] mt-14">
@@ -224,29 +252,29 @@
                         <img src="https://s3-alpha-sig.figma.com/img/c382/cc39/5adf611702b8d21c21098c8c7d6e44a1?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CpJJ9Gtu6U82gNcevfBopOy1Q3cVz4aq5xDAjeyD6ipzhykgF6uZGLMhquazMYXcRdxpRij3h5W2nzoKBMTwKaMczkFioiWnKgtGNldGf51dK9CJh-0-x-kTOuayPVce4U1u7xIuQeLJrS~Tg6IMjNylQxZHgOZwxGebyZ~6QaAqpKXuBE1P40UUkuia09pLXPf~4M3PgArD6hhIUMQC1MtL0n0GeTX5UJhzMnQP5FFWrruBQR4W~w5h64ZLk6cINij7Yq~-oJin3NBUwESPYmcnjo8JoZbFR6ViEclvMq1SOVdLxy5rklj7xKCS543Eg3QDTFAEB3~bsJu19Egpfw__" alt="">
 
                         <h4 class="text-xl lg:text-3xl font-semibold text-[#070113] mt-4">The Problem</h4>
-                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-6">Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-6">Deliveroo has recovered more than £100 million in revenue with Billing's revenue recovery features. "The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives," said Will Shu, cofounder and CEO of Deliveroo.</p>
                         <h6 class="text-[#0D0D12] text-xl font-normal mb-5">Improved Billing migrations</h6>
-                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-12">Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-12">Deliveroo has recovered more than £100 million in revenue with Billing's revenue recovery features. "The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives," said Will Shu, cofounder and CEO of Deliveroo.</p>
                         <img src="https://s3-alpha-sig.figma.com/img/d10f/04f2/1252adc8ec1e9dcb07517d4da2ba7db6?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TXe0nQzjMxi5W1Jhwh4lhkUqHX4dmvmCvv3j8Z0Gq~vivn74xMcNZxw5bbyEjYwXxjJTEj9kHK2E8WA9nJXwow8GFTrkrTIHYeCCyhYz4~gTjKkynhGe4GHXMRFMN46X7JHLgvLbrOKwNW1iZvA2D3ggNIHZ8yxszzXoRRqo4AWd~5ZzABCGy1SKIlh5CVro4kZJ6caQHUG8M7mMhDeg1k-cI~AavBNyP6VcHkdHE4MncTpdSy6fd7ucEJtbuLGQH740st2pA5XjtA9MC9isLb-dhxdxdoRSwg8z5ir6gSlLf65hIEFUF1ewYHGP5dNzSGONrHVL8YckpdMuk9lLWg__" alt="">
                         <h4 class="text-xl lg:text-3xl font-semibold text-[#070113] mt-4">The solution</h4>
-                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-2 lg:mb-4">Revenue recovery is a key part of how Stripe Billing maximizes revenue: we use machine learning to retry failed recurring payments at the optimal time, based on hundreds of dynamic signals. Our Smart Retries algorithm continuously gets better, and we’ve improved the recovery rate by 15.5% in 2023.</p>
-                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-12">Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-2 lg:mb-4">Revenue recovery is a key part of how Stripe Billing maximizes revenue: we use machine learning to retry failed recurring payments at the optimal time, based on hundreds of dynamic signals. Our Smart Retries algorithm continuously gets better, and we've improved the recovery rate by 15.5% in 2023.</p>
+                        <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-12">Deliveroo has recovered more than £100 million in revenue with Billing's revenue recovery features. "The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives," said Will Shu, cofounder and CEO of Deliveroo.</p>
                         
                     </div>
                     <div class="p-5 bg-[#F6F6F6] rounded-2xl">
                         <h4 class="text-xl lg:text-3xl font-semibold text-[#0D0D12]">Overview</h4>
                         <p class="text-[#666D80] text-lg font-normal mt-5 mb-2 lg:mb-5">
-                            “ The CFO is ascending. Earlier this year, Fortune <a href="#" class="text-[#14A99C] underline"> reported</a> that in the first half of 2022, 8.1% of CFOs at Fortune 500 and S&P 500 companies were promoted to CEO up from 5.6% a decade earlier. The jump reflects how business success and financial agility have become inseparable.
+                            " The CFO is ascending. Earlier this year, Fortune <a href="#" class="text-[#14A99C] underline"> reported</a> that in the first half of 2022, 8.1% of CFOs at Fortune 500 and S&P 500 companies were promoted to CEO up from 5.6% a decade earlier. The jump reflects how business success and financial agility have become inseparable.
                         </p>
                         <p class="text-[#666D80] text-lg font-normal mt-5 mb-2 lg:mb-5">
-                            It’s also consistent with our own recently released<a href="#" class="text-[#14A99C] underline"> CFO insights report, </a>which found that 68% of finance leaders believe that streamlining financial operations is an essential part of their company’s strategic growth. They see it as a prerequisite for entering new markets and launching new business models.”
+                            It's also consistent with our own recently released<a href="#" class="text-[#14A99C] underline"> CFO insights report, </a>which found that 68% of finance leaders believe that streamlining financial operations is an essential part of their company's strategic growth. They see it as a prerequisite for entering new markets and launching new business models."
                         </p>
 
                     </div>
                     <h4 class="text-xl lg:text-3xl font-semibold text-[#070113] mt-10">Results</h4>
                         <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-6">
-                            Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>                        
-                            <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-6">Deliveroo has recovered more than £100 million in revenue with Billing’s revenue recovery features. “The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives,” said Will Shu, cofounder and CEO of Deliveroo.</p>
+                            Deliveroo has recovered more than £100 million in revenue with Billing's revenue recovery features. "The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives," said Will Shu, cofounder and CEO of Deliveroo.</p>                        
+                            <p class="text-sm lg:text-lg font-normal text-[#8B8D98] mt-2 lg:mt-5 mb-6 lg:mb-6">Deliveroo has recovered more than £100 million in revenue with Billing's revenue recovery features. "The work Stripe has done to improve payment success rates, from the use of Stripe Billing to rapidly enabling Deliveroo Plus, makes it clear why Stripe is embedded in some of our largest initiatives," said Will Shu, cofounder and CEO of Deliveroo.</p>
                         </div>
 
             </div>
@@ -300,7 +328,7 @@
                         <p class="my-4 text-sm font-normal text-[#6B6B6B]">07 Mar, 2025 | Reading Time: 06 min
                         </p>
                         <h4 class="text-2xl font-bold">E-commerce & Retail</h4>
-                        <p class="mt-4 text-lg font-normal line-clamp-2">We deliver efficiently and quickly. That’s why we call it
+                        <p class="mt-4 text-lg font-normal line-clamp-2">We deliver efficiently and quickly. That's why we call it
                             E(asy)- Commerce!
                         </p>
 
