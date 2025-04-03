@@ -19,10 +19,25 @@ body {
 
 .container {max-width: 100% !important; margin: 0 100px; width: auto;}
 
-.title_container{display: flex;align-items: center;justify-content: center;padding: 12px;margin-top: 200px;margin-bottom: 40px;cursor: default;}
-.title_container .box{display: flex;align-items: center;justify-content: center;padding: 8px 16px; border: 1px solid #3ECCC3;font-size: 12px;border-radius: 8px;box-shadow: inset 0px -7px 11px rgba(62, 204, 195, 0.12);}
-.title_container .box img {margin-right: 8px;width: 24px; /* Adjust image size if needed */}
-.title_container .box .heading {background: linear-gradient(70deg, #7DE5DC 0.01%, #1F6761 80%, #3ECCC3 60%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+.breadcrumb {display: flex;align-items: center;padding: 12px 7px;cursor: default;}
+.breadcrumb .cont {display: flex;align-items: center;justify-content: center;padding: 8px 16px;border: 1px solid #3ECCC3;font-size: 14px;border-radius: 8px;box-shadow: inset 0px -7px 11px 0 rgba(62, 204, 195, 0.12);position: relative;transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;}
+
+/* Hover Effect */
+.breadcrumb .cont:hover {transform: translateY(-3px); /* Slight lift */box-shadow: 0px 6px 15px rgba(62, 204, 195, 0.3); /* Glowing effect */}
+/* Icon Styling */
+.breadcrumb .cont img {margin-right: 8px;width: 18px;transition: all 0.3s ease-in;}
+/* Gradient Text */
+.breadcrumb .cont .content {background: linear-gradient(70deg, #7DE5DC 0.01%, #2f9a91 80%, #3ECCC3 60%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+
+/* Keyframes for Rotation */
+@keyframes rotateIcon {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
 
 .main-heading {
   line-height: normal;
