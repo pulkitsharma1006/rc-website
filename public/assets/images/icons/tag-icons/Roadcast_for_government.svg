@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18.5 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-8, .cls-9 {
+        isolation: isolate;
+      }
+
+      .cls-10 {
+        opacity: .5;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1.78" y1="5.36" x2="6.17" y2="5.36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3eccc3"/>
+      <stop offset=".03" stop-color="#2abdb2"/>
+      <stop offset=".07" stop-color="#19b0a4"/>
+      <stop offset=".12" stop-color="#0da79b"/>
+      <stop offset=".18" stop-color="#06a295"/>
+      <stop offset=".37" stop-color="#05a194"/>
+      <stop offset="1" stop-color="#3beee2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="12.33" x2="16.72" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="7.05" x2="11.45" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="5.3" y1="10.64" x2="13.2" y2="10.64" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="12.76" y1="10.64" x2="18.48" y2="10.64" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1=".02" y1="10.64" x2="5.74" y2="10.64" xlink:href="#linear-gradient"/>
+  </defs>
+  <g class="cls-9">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <g class="cls-8">
+          <path class="cls-7" d="M6.17,5.36c0,1.21-.98,2.2-2.2,2.2s-2.2-.98-2.2-2.2.98-2.2,2.2-2.2,2.2.98,2.2,2.2Z"/>
+          <path class="cls-2" d="M12.33,5.36c0-1.21.98-2.2,2.2-2.2s2.2.98,2.2,2.2-.98,2.2-2.2,2.2-2.2-.98-2.2-2.2Z"/>
+          <path class="cls-3" d="M11.45,5.36c0,1.21-.98,2.2-2.2,2.2s-2.2-.98-2.2-2.2.98-2.2,2.2-2.2,2.2.98,2.2,2.2Z"/>
+          <path class="cls-4" d="M13.2,11.52v.88c0,.12-.05.23-.13.31-.08.08-.19.13-.31.13h-7.03c-.12,0-.23-.05-.31-.13-.08-.08-.13-.19-.13-.31v-.88c0-1.7,1.38-3.08,3.08-3.08h1.76c1.7,0,3.08,1.38,3.08,3.08Z"/>
+          <path class="cls-1" d="M14.01,12.83h4.03c.12,0,.23-.05.31-.13.08-.08.13-.19.13-.31v-.88c0-1.7-1.38-3.08-3.08-3.08h-1.76c-.31,0-.6.04-.88.13.81.72,1.32,1.78,1.32,2.95v.88c0,.15-.03.3-.08.44Z"/>
+          <path class="cls-5" d="M5.74,8.57c-.28-.08-.57-.13-.88-.13h-1.76C1.4,8.44.02,9.82.02,11.52v.88c0,.12.05.23.13.31.08.08.19.13.31.13h4.03c-.05-.14-.08-.29-.08-.44v-.88c0-1.17.51-2.22,1.32-2.95Z"/>
+        </g>
+        <g class="cls-10">
+          <path class="cls-6" d="M6.17,5.36c0,1.21-.98,2.2-2.2,2.2s-2.2-.98-2.2-2.2.98-2.2,2.2-2.2,2.2.98,2.2,2.2Z"/>
+          <path class="cls-6" d="M12.33,5.36c0-1.21.98-2.2,2.2-2.2s2.2.98,2.2,2.2-.98,2.2-2.2,2.2-2.2-.98-2.2-2.2Z"/>
+          <path class="cls-6" d="M11.45,5.36c0,1.21-.98,2.2-2.2,2.2s-2.2-.98-2.2-2.2.98-2.2,2.2-2.2,2.2.98,2.2,2.2Z"/>
+          <path class="cls-6" d="M13.2,11.52v.88c0,.12-.05.23-.13.31-.08.08-.19.13-.31.13h-7.03c-.12,0-.23-.05-.31-.13-.08-.08-.13-.19-.13-.31v-.88c0-1.7,1.38-3.08,3.08-3.08h1.76c1.7,0,3.08,1.38,3.08,3.08Z"/>
+          <path class="cls-6" d="M14.01,12.83h4.03c.12,0,.23-.05.31-.13.08-.08.13-.19.13-.31v-.88c0-1.7-1.38-3.08-3.08-3.08h-1.76c-.31,0-.6.04-.88.13.81.72,1.32,1.78,1.32,2.95v.88c0,.15-.03.3-.08.44Z"/>
+          <path class="cls-6" d="M5.74,8.57c-.28-.08-.57-.13-.88-.13h-1.76C1.4,8.44.02,9.82.02,11.52v.88c0,.12.05.23.13.31.08.08.19.13.31.13h4.03c-.05-.14-.08-.29-.08-.44v-.88c0-1.17.51-2.22,1.32-2.95Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

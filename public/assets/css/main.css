@@ -728,3 +728,32 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 @media (max-width:1023px) {
   .container {margin: 0 24px;}
 }
+
+
+@media (max-width:420px) {
+  .breadcrumb .cont {
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-size: 11px !important;
+    align-items: center;
+  }
+  .breadcrumb .cont img {
+    margin-right: 4px;
+    width: 15px;
+  }
+  .gradient-1 {
+    font-size: 28px;
+  }
+  .gradient-2 {
+    font-size: 30px;
+  }
+  .cl-marquee-tag {
+    width: 26vw;
+    margin: 0 1em;
+  }
+  .c-btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+}
+}

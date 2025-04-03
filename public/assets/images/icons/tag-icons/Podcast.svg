@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18.5 16">
+  <defs>
+    <style>
+      .cls-1 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        opacity: .5;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="5.97" y1="5.63" x2="12.53" y2="5.63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3eccc3"/>
+      <stop offset=".03" stop-color="#2abdb2"/>
+      <stop offset=".07" stop-color="#19b0a4"/>
+      <stop offset=".12" stop-color="#0da79b"/>
+      <stop offset=".18" stop-color="#06a295"/>
+      <stop offset=".37" stop-color="#05a194"/>
+      <stop offset="1" stop-color="#3beee2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="4.1" y1="11.98" x2="14.4" y2="11.98" xlink:href="#linear-gradient"/>
+  </defs>
+  <g class="cls-2">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <g class="cls-6">
+          <path class="cls-5" d="M8.31,8.44h-2.31c.23,1.59,1.6,2.81,3.25,2.81s3.02-1.22,3.25-2.81h-2.31v-.94h2.34v-1.41h-2.34v-.94h2.34v-1.41h-2.34v-.94h2.31C12.27,1.23,10.9,0,9.25,0s-3.02,1.22-3.25,2.81h2.31v.94h-2.34v1.41h2.34v.94h-2.34v1.41h2.34v.94Z"/>
+          <path class="cls-5" d="M9.72,13.1c2.62-.24,4.69-2.45,4.69-5.13h-.94c0,2.33-1.89,4.22-4.22,4.22s-4.22-1.89-4.22-4.22h-.94c0,2.68,2.06,4.89,4.69,5.13v1.96h-3.28v.94h7.5v-.94h-3.28v-1.96Z"/>
+        </g>
+        <g class="cls-1">
+          <path class="cls-4" d="M8.31,8.44h-2.31c.23,1.59,1.6,2.81,3.25,2.81s3.02-1.22,3.25-2.81h-2.31v-.94h2.34v-1.41h-2.34v-.94h2.34v-1.41h-2.34v-.94h2.31C12.27,1.23,10.9,0,9.25,0s-3.02,1.22-3.25,2.81h2.31v.94h-2.34v1.41h2.34v.94h-2.34v1.41h2.34v.94Z"/>
+          <path class="cls-3" d="M9.72,13.1c2.62-.24,4.69-2.45,4.69-5.13h-.94c0,2.33-1.89,4.22-4.22,4.22s-4.22-1.89-4.22-4.22h-.94c0,2.68,2.06,4.89,4.69,5.13v1.96h-3.28v.94h7.5v-.94h-3.28v-1.96Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

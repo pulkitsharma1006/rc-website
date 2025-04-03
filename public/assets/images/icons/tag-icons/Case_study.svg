@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18.5 16">
+  <defs>
+    <style>
+      .cls-1 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        opacity: .5;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="6.37" y1="2.94" x2="12.24" y2="2.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3eccc3"/>
+      <stop offset=".03" stop-color="#2abdb2"/>
+      <stop offset=".07" stop-color="#19b0a4"/>
+      <stop offset=".12" stop-color="#0da79b"/>
+      <stop offset=".18" stop-color="#06a295"/>
+      <stop offset=".37" stop-color="#05a194"/>
+      <stop offset="1" stop-color="#3beee2"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2.39" y1="10.67" x2="16.11" y2="10.67" xlink:href="#linear-gradient"/>
+  </defs>
+  <g class="cls-2">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <g id="Layer_2" data-name="Layer 2" class="cls-1">
+          <g id="maps">
+            <g id="_04.library" data-name=" 04.library">
+              <path class="cls-4" d="M12.24,2.94c0,.83-.28,1.52-.85,2.09-.57.57-1.26.85-2.09.85s-1.52-.28-2.09-.85-.85-1.26-.85-2.09.28-1.52.85-2.09S8.48,0,9.3,0s1.52.28,2.09.85.85,1.26.85,2.09Z"/>
+              <path class="cls-3" d="M16.11,6.05v6.76c0,.37-.29.68-.66.7-1.02.07-2.01.3-2.96.68-1.01.41-1.96.96-2.81,1.65-.26.21-.62.21-.88,0-.85-.69-1.8-1.24-2.81-1.65-.94-.38-1.94-.61-2.96-.68-.37-.02-.66-.33-.66-.7v-6.76c0-.39.32-.71.71-.71.02,0,.05,0,.07,0,.93.09,1.86.35,2.78.78,1.17.55,2.28,1.31,3.31,2.29,1.03-.98,2.13-1.74,3.31-2.29.92-.43,1.85-.69,2.78-.78.39-.04.74.24.78.63,0,.02,0,.05,0,.07h0Z"/>
+            </g>
+          </g>
+        </g>
+        <g id="Layer_2-2" data-name="Layer 2" class="cls-6">
+          <g id="maps-2" data-name="maps">
+            <g id="_04.library-2" data-name=" 04.library">
+              <path class="cls-5" d="M12.24,2.94c0,.83-.28,1.52-.85,2.09-.57.57-1.26.85-2.09.85s-1.52-.28-2.09-.85-.85-1.26-.85-2.09.28-1.52.85-2.09S8.48,0,9.3,0s1.52.28,2.09.85.85,1.26.85,2.09Z"/>
+              <path class="cls-5" d="M16.11,6.05v6.76c0,.37-.29.68-.66.7-1.02.07-2.01.3-2.96.68-1.01.41-1.96.96-2.81,1.65-.26.21-.62.21-.88,0-.85-.69-1.8-1.24-2.81-1.65-.94-.38-1.94-.61-2.96-.68-.37-.02-.66-.33-.66-.7v-6.76c0-.39.32-.71.71-.71.02,0,.05,0,.07,0,.93.09,1.86.35,2.78.78,1.17.55,2.28,1.31,3.31,2.29,1.03-.98,2.13-1.74,3.31-2.29.92-.43,1.85-.69,2.78-.78.39-.04.74.24.78.63,0,.02,0,.05,0,.07h0Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

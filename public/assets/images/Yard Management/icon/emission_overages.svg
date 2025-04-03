@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #4ea69c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.65px;
+      }
+
+      .cls-3 {
+        fill: #00746b;
+        opacity: .1;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="17.94" y="17.94" width="28.11" height="28.11"/>
+    </clipPath>
+  </defs>
+  <rect class="cls-3" width="64" height="64"/>
+  <g class="cls-4">
+    <path id="path633" class="cls-2" d="M45.21,39.92c0,2.27-1.83,4.11-4.09,4.11s-4.09-1.84-4.09-4.11,1.83-4.11,4.09-4.11,4.09,1.84,4.09,4.11Z"/>
+    <path id="path637" class="cls-2" d="M33.6,42.83c-.74.74-1.76,1.2-2.89,1.2-2.26,0-4.09-1.84-4.09-4.11s1.83-4.11,4.09-4.11c1.24,0,2.35.56,3.1,1.43"/>
+    <path id="path641" class="cls-2" d="M23.75,35.82h-4.98v8.21h4.98"/>
+    <path id="path645" class="cls-2" d="M22.38,39.94h-3.61"/>
+    <path id="path649" class="cls-2" d="M34.21,31.83h-3.56v-3.56c0-4.58,3.72-8.3,8.3-8.3h3.56v3.56c0,4.58-3.72,8.3-8.3,8.3Z"/>
+    <path id="path653" class="cls-2" d="M30.65,31.83l7.08-7.08"/>
+    <path id="path657" class="cls-2" d="M30.65,28.51v3.31h-3.31c-3.17,0-5.73-2.57-5.73-5.73v-3.31h3.31c3.17,0,5.73,2.57,5.73,5.73Z"/>
+    <path id="path661" class="cls-2" d="M30.65,31.83l-5.41-5.41"/>
+  </g>
+</svg>
