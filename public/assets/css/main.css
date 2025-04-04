@@ -173,6 +173,8 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 .cl-logos img {filter: brightness(0) invert(1); transition:all .3s ease-in; opacity: 35% !important; width:100% !important;}
 .cl-logos img:hover {filter: none; scale: 1.2; opacity: 100% !important;}
 
+.img-zoom {transition:all .3s ease-in;}
+.img-zoom:hover {scale: 1.1;}
 
 .p-txt {color:#666D80;}
 .p-head {color:#0D0D12;}
