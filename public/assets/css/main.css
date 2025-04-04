@@ -612,7 +612,7 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   border-radius: 10%;
   background-image: linear-gradient(#3BEEE2 0%, #05A194 100%);
   filter: blur(110px);
-  transition: all 850ms ease-out;
+  transition: all 170ms ease-out;
   position: fixed;
   pointer-events: none;
   left: 0;

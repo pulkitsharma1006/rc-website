@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00746b;
+        opacity: .1;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #4ea49b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.26px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-1" width="64" height="64"/>
+      <g id="g1998">
+        <g id="g2000">
+          <g id="g2002">
+            <g id="g2008">
+              <path id="path2010" class="cls-2" d="M41.68,16.26c0-1.34-1.08-2.42-2.42-2.42h-14.53c-1.34,0-2.42,1.08-2.42,2.42v16.95h-6.05l15.74,16.95,15.74-16.95h-6.05v-16.95Z"/>
+            </g>
+            <g id="g2012">
+              <path id="path2014" class="cls-2" d="M34.42,22.32h-3.63c-.64,0-1.26.25-1.71.71-.45.45-.71,1.07-.71,1.71s.25,1.26.71,1.71c.45.45,1.07.71,1.71.71h2.42c.64,0,1.26.25,1.71.71.45.45.71,1.07.71,1.71s-.25,1.26-.71,1.71c-.45.45-1.07.71-1.71.71h-3.63"/>
+            </g>
+            <g id="g2016">
+              <path id="path2018" class="cls-2" d="M32,22.32v-2.42"/>
+            </g>
+            <g id="g2020">
+              <path id="path2022" class="cls-2" d="M32,34.42v-2.42"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
