@@ -8,119 +8,112 @@ const blogs = [
     { link: "Make-A-New-Year-Resolution.html", image: "blog_86.jpg", category: ["Compliance"], title: "Make A New Year Resolution 'NO MORE ROAD ACCIDENTS !'", description: "The New Year is one of the few universally celebrated events, connecting people across borders", readingTime: "06 min.", date: "Jan 01, 2025" },
     { link: "Jingle-Bells-Jingle-Bells-Jingle-All-the-Way.html", image: "blog_85.jpg", category: ["Company"], title: "JINGLE BELLS JINGLE BELLS JINGLE ALL THE WAY", description: "Come Christmas and it's the advent of a joyous occasion!", readingTime: "06 min.", date: "Dec 24, 2024" },
     { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_84.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_83.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_82.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_81.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_80.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_79.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_78.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_77.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_76.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_75.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_74.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_73.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_72.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_71.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_70.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_69.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_68.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_67.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_66.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_65.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_64.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_63.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_62.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_61.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_60.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_59.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_58.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_57.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_56.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_55.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_54.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_53.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_52.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_51.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_50.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_49.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_48.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_47.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_46.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_45.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_44.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_43.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_42.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_41.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_40.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_39.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_38.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_37.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_36.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_35.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_34.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_33.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_32.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_31.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_30.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_29.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_28.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_27.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
+    { link: "Joy-Of-Giving-Roadcast-Delivers-Happiness.html", image: "blog_26.jpg", category: ["Engineering"], title: "Joy Of Giving! Roadcast Delivers Happiness!!", description: "In today’s fast-paced world, the essence of Christmas can sometimes get overshadowed", readingTime: "06 min.", date: "Dec 20, 2024" },
 ];
 
-const blogsPerPage = 6;
-let currentPage = 1;
 let filteredBlogs = blogs;
 
-function changeActiveClass(clickedElement) {
-    // Remove active class from all links
-    const allLinks = document.querySelectorAll('.grid a');
-    allLinks.forEach(link => {
-        link.classList.remove('border-l', 'border-[#14A99C]', 'text-[#14A99C]');
-        link.classList.add('text-[#818898]');  // reset text color for all
-    });
+function renderPaginatedBlogs(data) {
+    const $blogContainer = $('#blog-container');
+    $blogContainer.empty();
 
-    // Add active class to clicked link
-    clickedElement.classList.remove('text-[#818898]');
-    clickedElement.classList.add('border-l', 'border-[#14A99C]', 'text-[#14A99C]');
-}
-
-function filterBlogs(category) {
-    // Implement your filter logic here, you can use the `category` to filter blogs
-    console.log('Filter blogs by category:', category);
-}
-
-// Render blogs based on the current page and filter
-function renderBlogs() {
-    const blogContainer = document.getElementById("blog-container");
-    blogContainer.innerHTML = "";
-
-    const startIndex = (currentPage - 1) * blogsPerPage;
-    const endIndex = startIndex + blogsPerPage;
-    const paginatedBlogs = filteredBlogs.slice(startIndex, endIndex);
-
-    paginatedBlogs.forEach(blog => {
-        const blogElement = document.createElement("div");
-        blogElement.classList.add("bg-white", "shadow-md", "p-4", "pb-8", "rounded-xl", "border", "border-[#eeeeee]");
-        blogElement.innerHTML = `
-            <a href="/blog/${blog.link}" class="block">
-                <img src="/assets/images/blog/${blog.image}" alt="" class="w-full object-cover rounded-2xl mb-4">
-                <div class="min-h-28">
-                    <h6 class="my-2 text-lg font-semibold text-[#0D0D12] line-clamp-2">${blog.title}</h6>
-                    <p class="text-gray-600 text-sm line-clamp-2">${blog.description}</p>
-                </div>
-                <p class="text-gray-500 text-sm mt-3"><span class="font-semibold">Reading Time:</span> ${blog.readingTime} | ${blog.date}</p>
-            </a>
+    data.forEach(blog => {
+        const blogHtml = `
+            <div class="bg-white shadow-md p-4 pb-8 rounded-xl border border-[#eeeeee]">
+                <a href="/blog/${blog.link}" class="block">
+                    <img src="/assets/images/blog/${blog.image}" alt="" class="w-full object-cover rounded-2xl mb-4">
+                    <div class="min-h-28">
+                        <h6 class="my-2 text-lg font-semibold text-[#0D0D12] line-clamp-2">${blog.title}</h6>
+                        <p class="text-gray-600 text-sm line-clamp-2">${blog.description}</p>
+                    </div>
+                    <p class="text-gray-500 text-sm mt-3"><span class="font-semibold">Reading Time:</span> ${blog.readingTime} | ${blog.date}</p>
+                </a>
+            </div>
         `;
-        blogContainer.appendChild(blogElement);
+        $blogContainer.append(blogHtml);
     });
-
-    renderPagination();
 }
 
-// Handle filter selection
+function renderPagination() {
+    $('#pagination-container').pagination({
+        dataSource: filteredBlogs,
+        pageSize: 6,
+        showPrevious: true,
+        showNext: true,
+        callback: function (data, pagination) {
+            renderPaginatedBlogs(data);
+        }
+    });
+}
+
+// Category filter
 function filterBlogs(category) {
     if (category) {
         filteredBlogs = blogs.filter(blog => blog.category.includes(category));
     } else {
-        filteredBlogs = blogs;  // Show all blogs if no filter
+        filteredBlogs = blogs;
     }
-    currentPage = 1;  // Reset to first page when filtering
-    renderBlogs();
+    renderPagination(); // refresh pagination after filter
 }
 
-// Render pagination buttons
-function renderPagination() {
-    const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
-    const pageNumbers = document.getElementById("page-numbers");
-    pageNumbers.innerHTML = "";
-
-    let pages = [];
-    if (totalPages <= 6) {
-        pages = Array.from({ length: totalPages }, (_, i) => i + 1);
-    } else {
-        pages = [1, 2, 3, "...", totalPages - 2, totalPages - 1, totalPages];
-    }
-
-    pages.forEach(page => {
-        const pageButton = document.createElement("button");
-        pageButton.innerText = page;
-        pageButton.classList.add("h-12", "w-12", "rounded-full", "text-gray-700", "cursor-pointer", "hover:bg-[#14A99C]", "hover:text-white", "transition");
-
-        if (page === currentPage) {
-            pageButton.classList.add("bg-[#14A99C]", "text-white");
-        }
-
-        if (page !== "...") {
-            pageButton.addEventListener("click", () => {
-                currentPage = page;
-                renderBlogs();
-            });
-        }
-
-        pageNumbers.appendChild(pageButton);
-    });
-
-    document.getElementById("prev-btn").disabled = currentPage === 1;
-    document.getElementById("next-btn").disabled = currentPage === totalPages;
-}
-
-// Previous and next buttons functionality
-document.getElementById("prev-btn").addEventListener("click", () => {
-    if (currentPage > 1) {
-        currentPage--;
-        renderBlogs();
-    }
+// Initial load
+$(document).ready(function () {
+    renderPagination();
 });
-
-document.getElementById("next-btn").addEventListener("click", () => {
-    if (currentPage < Math.ceil(filteredBlogs.length / blogsPerPage)) {
-        currentPage++;
-        renderBlogs();
-    }
-});
-
-// Initial render
-document.addEventListener("DOMContentLoaded", renderBlogs);
