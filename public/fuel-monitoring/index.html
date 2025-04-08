@@ -296,32 +296,29 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 my-4 lg:my-18">
                 <div>
                     <form class="grid grid-cols-1">
+                        <!-- Fleet Size -->
                         <div class="mb-4 lg:mb-10">
                             <p class="text-white text-base lg:text-xl font-semibold mb-2 lg:mb-6">
                                 Your Fleet Size?
                             </p>
-                            <div class="flex items-center bg-white h-[36px] text-black text-sm border border-gray-300 rounded-lg overflow-hidden w-[326px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]">
-                                <input type="number" id="vehicle" class="w-full outline-none border-0 px-3 no-spinner" name="vehicle" placeholder="Enter your fleet size" min="0">
+                            <div class="flex items-center bg-white h-[36px] text-black text-sm border border-gray-300 rounded-lg overflow-hidden w-[326px]">
+                                <input type="number" id="fleetSizeInput" class="w-full outline-none border-0 px-3 no-spinner" name="fleetSize" placeholder="Enter your fleet size" min="0">
                                 <div class="flex">
-                                    <button type="button" class="px-3 py-1 text-[#23BBAD] cursor-pointer bg-white hover:bg-gray-300 border-l border-[#E5E7EB]" onclick="incrementFleet()">+</button>
-                                    <button type="button" class="px-3 py-1 text-[#23BBAD] cursor-pointer bg-white hover:bg-gray-300 border-l border-[#E5E7EB]" onclick="decrementFleet()">−</button>
+                                    <button type="button" class="px-3 py-1 text-[#23BBAD]" onclick="incrementFleet()">+</button>
+                                    <button type="button" class="px-3 py-1 text-[#23BBAD]" onclick="decrementFleet()">−</button>
                                 </div>
                             </div>
                         </div>
+            
+                        <!-- Fuel Price -->
                         <div class="mb-4 lg:mb-10">
                             <p class="text-white text-base lg:text-xl font-semibold mb-2 lg:mb-6">
                                 Current Fuel Price?
                             </p>
-                            <div class="flex items-center bg-white h-[36px] text-black text-sm border border-gray-300 rounded-lg overflow-hidden w-[326px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]">
-                                
-                                <!-- Left: Currency Symbol -->
+                            <div class="flex items-center bg-white h-[36px] text-black text-sm border border-gray-300 rounded-lg overflow-hidden w-[326px]">
                                 <span id="currencySymbol" class="px-3 text-gray-500">₹</span>
-                        
-                                <!-- Input Field -->
-                                <input type="number" id="vehicle" class="w-full outline-none border-0 px-3 no-spinner" name="vehicle" placeholder="Enter fuel price" min="0">
-                                
-                                <!-- Right: Currency Dropdown -->
-                                <select id="currencySelect" class="px-2 py-1 text-[#23BBAD] cursor-pointer bg-white border-l border-[#E5E7EB] outline-none">
+                                <input type="number" id="fuelPriceInput" class="w-full outline-none border-0 px-3 no-spinner" name="fuelPrice" placeholder="Enter fuel price" min="0">
+                                <select id="currencySelect" class="px-2 py-1 text-[#23BBAD] bg-white border-l border-[#E5E7EB] outline-none">
                                     <option value="INR">INR (₹)</option>
                                     <option value="USD">USD ($)</option>
                                     <option value="EUR">EUR (€)</option>
@@ -330,42 +327,61 @@
                                 </select>
                             </div>
                         </div>
+            
+                        <!-- Fuel Theft -->
                         <div class="mb-4 lg:mb-10">
                             <p class="text-white text-base lg:text-xl font-semibold mb-2 lg:mb-6">
                                 Estimated Fuel Theft Per Day (Per Vehicle)
                             </p>
-                            <div class="flex items-center bg-white h-[36px] text-black text-sm border border-gray-300 rounded-lg overflow-hidden w-[326px] shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)]">
-                                <!-- Fixed "L" Text -->
+                            <div class="flex items-center bg-white h-[36px] text-black text-sm border border-gray-300 rounded-lg overflow-hidden w-[326px]">
                                 <span class="pl-3 text-gray-500">></span>
-                                <!-- Input Field -->
-                                <input type="number" id="fuelInput" class="w-full outline-none border-0 px-3 no-spinner" name="vehicle" placeholder="0"  value=">5L">
-                                
-                                <!-- Fixed "L" Text -->
+                                <input type="number" id="fuelInput" class="w-full outline-none border-0 px-3 no-spinner" name="fuelTheft" placeholder="0" value="5">
                                 <span class="px-3 text-gray-500">Ltr.</span>
-                        
-                                <!-- Increment & Decrement Buttons -->
                                 <div class="flex">
-                                    <button type="button" class="px-3 py-1 cursor-pointer text-[#23BBAD] bg-white hover:bg-gray-300 border-l border-[#E5E7EB]" onclick="incrementLiter()">+</button>
-                                    <button type="button" class="px-3 py-1 cursor-pointer text-[#23BBAD] bg-white hover:bg-gray-300 border-l border-[#E5E7EB]" onclick="decrementLiter()">−</button>
+                                    <button type="button" class="px-3 py-1 text-[#23BBAD]" onclick="incrementLiter()">+</button>
+                                    <button type="button" class="px-3 py-1 text-[#23BBAD]" onclick="decrementLiter()">−</button>
                                 </div>
                             </div>
                         </div>
+            
+                        <!-- Calculate Button -->
                         <div>
-                            <button class="relative px-5 py-3 text-sm font-normal rounded-lg text-white overflow-hidden transition-all duration-500 
-                                    bg-[linear-gradient(353deg,_#198A81_17.51%,_#23BBAD_100%)] 
-                                    before:absolute before:top-0 before:left-0 before:w-full before:h-full 
-                                    before:bg-[linear-gradient(53deg,_#23BBAD_17.51%,_#198A81_100%)] 
-                                    before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500 before:z-0">
-                                <span class="relative z-10">Calculate</span>
-                            </button>
+                            <button class="custom-button" type="button"><span class="button-text">Calculate</span></button>
                         </div>
-                        
                     </form>
                 </div>
-                <div class="grid grid-cols-2 gap-2">
-                    <img src="/assets/images/icons/calculation_1.png" alt="">
-                    <img src="/assets/images/icons/calculation_2.png" alt="">
-                    
+            
+                <!-- Result Cards -->
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Without Roadcast -->
+                    <div class="bg-[#252525] rounded-md relative h-full border border-white/75 overflow-hidden">
+                        <div class="p-6">
+                            <p class="text-base font-medium text-[#ffffff]">Without Roadcast You are losing</p>
+                            <p id="lossAmount" class="text-[40px] font-semibold text-[#FF5555]">₹0</p>
+                            <p class="text-base font-medium text-[#ffffff]">Every Month</p>
+                        </div>
+                        <div class="absolute bottom-[-90px] left-0" id="move-red">
+                            <img src="/assets/images/wave-red.png" alt="" class="w-[500px]">
+                        </div>
+                        <div id="dailyLoss" class="absolute bottom-4 left-6 z-9 text-[#FFACAC]">
+                            On an Average <br> Everyday you are losing <br> ₹0
+                        </div>
+                    </div>
+            
+                    <!-- With Roadcast -->
+                    <div class="bg-[#0A5D56] rounded-md relative h-full border border-white/75 overflow-hidden">
+                        <div class="p-6">
+                            <p class="text-base font-medium text-[#ffffff]">With Roadcast You can Save</p>
+                            <p id="saveAmount" class="text-[40px] font-semibold text-[#ffffff]">₹0</p>
+                            <p class="text-base font-medium text-[#ffffff]">Every Month</p>
+                        </div>
+                        <div class="absolute bottom-[-10px] left-0" id="move-green">
+                            <img src="/assets/images/wave-green.png" alt="" class="w-[500px]">
+                        </div>
+                        <div id="dailySave" class="absolute bottom-4 left-6 z-9 text-[#66EADF]">
+                            On an Average <br> Everyday you can save <br> ₹0
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

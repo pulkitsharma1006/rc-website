@@ -21,28 +21,6 @@ $(document).ready(function(){
 
     });
 
-    $(document).ready(function(){
-        $("#Testimonials-2").owlCarousel({
-            loop: true,                 // Infinite loop
-            margin: 16,                 // Space between items
-            autoplay: true,             // Very low timeout to keep it moving
-            autoplaySpeed: 8000,        // Smooth transition speed
-            autoplayHoverPause: false,  // Keep autoplay running
-            slideTransition: 'linear',  // Ensures smooth continuous sliding
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3.2
-                }
-            }
-        });
-    });
-
 
     $(document).ready(function(){
         var owl = $(".owl-carousel");
@@ -74,6 +52,69 @@ $(document).ready(function(){
             owl.trigger("prev.owl.carousel");
         });
     });
+
+    function getCurrencySymbol(currency) {
+        switch (currency) {
+            case 'INR': return '₹';
+            case 'USD': return '$';
+            case 'EUR': return '€';
+            case 'GBP': return '£';
+            case 'JPY': return '¥';
+            default: return '$';
+        }
+    }
+
+
+    // Calculation for fuel Consumption
+    // Change the code aand total capacity of truck 300L monthly
+    $(document).ready(function () {
+        $('#currencySelect').on('change', function () {
+            const symbol = getCurrencySymbol($(this).val());
+            $('#currencySymbol').text(symbol);
+        });
+
+        $('.custom-button').on('click', function () {
+            const fleetSize = parseFloat($('#fleetSizeInput').val()) || 0;
+            const fuelPrice = parseFloat($('#fuelPriceInput').val()) || 0;
+            const fuelTheft = parseFloat($('#fuelInput').val()) || 0;
+            const currencySymbol = getCurrencySymbol($('#currencySelect').val());
+
+            const monthlyLoss = fleetSize * fuelTheft * fuelPrice * 30;
+            const monthlySave = monthlyLoss * 0.15; // changed to 15%
+            const dailyLoss = monthlyLoss / 30;
+            const dailySave = monthlySave / 30;
+
+            $('#lossAmount').text(currencySymbol + monthlyLoss.toFixed(2));
+            $('#saveAmount').text(currencySymbol + monthlySave.toFixed(2));
+            $('#dailyLoss').html(`On an Average <br> Everyday you are losing <br> ${currencySymbol}${dailyLoss.toFixed(2)}`);
+            $('#dailySave').html(`On an Average <br> Everyday you can save <br> ${currencySymbol}${dailySave.toFixed(2)}`);
+        });
+
+        // Increment / Decrement functions
+        window.incrementFleet = function () {
+            let val = parseInt($('#fleetSizeInput').val()) || 0;
+            $('#fleetSizeInput').val(val + 1);
+        }
+
+        window.decrementFleet = function () {
+            let val = parseInt($('#fleetSizeInput').val()) || 0;
+            $('#fleetSizeInput').val(Math.max(0, val - 1));
+        }
+
+        window.incrementLiter = function () {
+            let val = parseFloat($('#fuelInput').val()) || 0;
+            $('#fuelInput').val((val + 1).toFixed(1));
+        }
+
+        window.decrementLiter = function () {
+            let val = parseFloat($('#fuelInput').val()) || 0;
+            $('#fuelInput').val(Math.max(0, val - 1).toFixed(1));
+        }
+    });
+
+    // Calculation for fuel Consumption
+    // Change the code aand total capacity of truck 300L monthly
+
 
     $(document).ready(function () {
         $("#openPopup").click(function () {

@@ -4,9 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     initCounters();
     initVideoAutoPlay();
     initCarousel();
-    initFleetControls();
-    initFuelControls();
-    initCurrencySelector();
     
 });
 
@@ -105,24 +102,3 @@ function initCarousel() {
     }, 3000);
 }
 
-function initFleetControls() {
-    initIncrementDecrement("vehicle");
-}
-
-function initFuelControls() {
-    initIncrementDecrement("fuelInput");
-}
-
-function initIncrementDecrement(id) {
-    const input = document.getElementById(id);
-    if (!input) return;
-    document.getElementById(`${id}-increment`).addEventListener("click", () => input.value = parseInt(input.value || 0) + 1);
-    document.getElementById(`${id}-decrement`).addEventListener("click", () => input.value = Math.max(0, parseInt(input.value || 0) - 1));
-}
-
-function initCurrencySelector() {
-    const currencySymbols = { INR: "₹", USD: "$", EUR: "€", GBP: "£", JPY: "¥" };
-    document.getElementById("currencySelect").addEventListener("change", function () {
-        document.getElementById("currencySymbol").textContent = currencySymbols[this.value];
-    });
-}
