@@ -672,7 +672,7 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 }
 
 .dropdown-menu div {
-  display: inline-flex; width: 50%;
+  display: inline-flex; width: 49%;
   align-items: center;
   padding: 6px 8px;
   cursor: pointer; font-size: 12px;
