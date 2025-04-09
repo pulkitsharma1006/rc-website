@@ -205,6 +205,7 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
 .blog-content ol {list-style-type: decimal; margin: 0 0 2rem 2rem;}
 .blog-content ul li, .blog-content ol li {color:#666D80; margin-bottom: 0.5rem; font-size: 1.125rem;}
 
+.blog-filters {position:sticky; top:100px;}
 
 .inside-shadow::before{
   content: '';

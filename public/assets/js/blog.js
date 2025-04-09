@@ -119,7 +119,7 @@ function renderPaginatedBlogs(data) {
 function renderPagination() {
     $('#pagination-container').pagination({
         dataSource: filteredBlogs,
-        pageSize: 6,
+        pageSize: 12,
         showPrevious: true,
         showNext: true,
         callback: function (data, pagination) {

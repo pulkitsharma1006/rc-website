@@ -36,11 +36,11 @@
     float: left;
     border: none;
     border-right: none;
-    list-style: none
+    list-style: none; margin: 0 5px;
 }
 
 .paginationjs .paginationjs-pages li>a {
-    min-width: 40px;
+    min-width: 40px; cursor: pointer;
     height: 40px;
     line-height: 40px;
     width: 40px;
