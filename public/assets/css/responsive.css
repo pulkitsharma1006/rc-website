@@ -1,8 +1,39 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #001615;
-  color: #fff;
+
+@media (max-width:1110px) {
+  header nav, .tp-btns {display: none;}
+  .menu {display:block;}
+  header .container {margin: 0 24px !important;}
+  .language-dropdown {top: 18px; left: auto; margin: 0; right: 84px;}
+  .dropdown-btn {border-radius: 6px;}
+  .dropdown-menu {border-radius: 6px; margin-top: -31px; margin-left: -1px;}
+}
+
+@media (max-width:1023px) {
+  .container {margin: 0 24px;}
+}
+@media(max-width: 960px) {
+  .overVideo .widgets.right,
+  .overVideo .widgets.left{
+    top: auto;
+    left: auto;
+    right: 0;
+    transform: translate(-7%, -58%);
+    border-radius: 0.4rem;
+  }
+
+  
+  .gradient-1 {
+    font-size: 36px;
+  }
+  .gradient-2 {
+    font-size: 42px;
+  }
+  
+  .overVideo .widgets.right img,
+    .overVideo .widgets.left img{
+    width: 250px;
+    border-radius: 0.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -12,6 +43,49 @@ body {
   .inside-shadow::after{
     box-shadow: -6px 0 42px 10px rgba(0, 22, 21, 1);
   }
+}
+
+@media (max-width: 420px) {
+  .breadcrumb .cont {
+    padding: 4px 8px !important;
+    border-radius: 4px !important;
+    font-size: 11px !important;
+    align-items: center;
+  }
+  .breadcrumb .cont img {
+    margin-right: 4px;
+    width: 15px;
+  }
+  .gradient-1 {
+    font-size: 28px;
+  }
+  .gradient-2 {
+    font-size: 30px;
+  }
+  .cl-marquee-tag {
+    width: 26vw;
+    margin: 0 1em;
+  }
+  .c-btn {
+    font-size: 0.7rem;
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+}
+  .overVideo .widgets.right
+  .overVideo .widgets.left{
+    top: auto;
+    left: auto;
+    right: 0;
+    transform: translate(-7%, -58%);
+    border-radius: 0.4rem;
+  }
+  
+  .overVideo .widgets.right img,
+  .overVideo .widgets.left img{
+    width: 150px;
+    border-radius: 0.5rem;
+  }
+
 }
 
 

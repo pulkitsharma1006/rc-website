@@ -228,6 +228,47 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   z-index: 99;
 }
 
+.overVideo .widgets.right{
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: 0;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 0px 1px #18181B0A, 0px 8px 32px 0px #18181B0F;
+  border-radius: 1rem;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.overVideo .widgets.right img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.overVideo .widgets.left{
+  position: absolute;
+  top: 50%;
+  right: auto;
+  left: 0;
+  transform: translate(-50%, -50%);
+  box-shadow:  0px 8px 32px 0px #18181B0F, 0px 0px 0px 1px #18181B0A;
+  border-radius: 1rem;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.overVideo .widgets.left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+
 .no-spinner::-webkit-outer-spin-button,
   .no-spinner::-webkit-inner-spin-button {
       -webkit-appearance: none;
@@ -732,47 +773,8 @@ header nav ul li .main-nav.active i {background: url('../images/icons/icon-arrow
   100% { background-position: 0% 50%; }
 }
 
-
-@media (max-width:1110px) {
-  header nav, .tp-btns {display: none;}
-  .menu {display:block;}
-  header .container {margin: 0 24px !important;}
-  .language-dropdown {top: 18px; left: auto; margin: 0; right: 84px;}
-  .dropdown-btn {border-radius: 6px;}
-  .dropdown-menu {border-radius: 6px; margin-top: -31px; margin-left: -1px;}
-
-
-}
-
-@media (max-width:1023px) {
-  .container {margin: 0 24px;}
+.drop-shadow {
+  box-shadow: 0px 0px 100px -28px #14fff72d;
 }
 
 
-@media (max-width:420px) {
-  .breadcrumb .cont {
-    padding: 4px 8px !important;
-    border-radius: 4px !important;
-    font-size: 11px !important;
-    align-items: center;
-  }
-  .breadcrumb .cont img {
-    margin-right: 4px;
-    width: 15px;
-  }
-  .gradient-1 {
-    font-size: 28px;
-  }
-  .gradient-2 {
-    font-size: 30px;
-  }
-  .cl-marquee-tag {
-    width: 26vw;
-    margin: 0 1em;
-  }
-  .c-btn {
-    font-size: 0.7rem;
-    padding: 0.4rem 1rem;
-    border-radius: 0.4rem;
-}
-}

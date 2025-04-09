@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     initCursorEffect();
     initFeatureClickEvents();
-    initCounters();
     initVideoAutoPlay();
     initCarousel();
     
@@ -51,16 +50,17 @@ function updateFeatureContent({ title, description, icon }) {
         });
     }, 300);
 }
+// counter for clients couting
 
-function initCounters() {
-    const counters = [
-        { id: "fleet-counter", target: 24000, duration: 2000, step: 1000, format: "short" },
-        { id: "rating-counter", target: 46, duration: 1500, step: 1, format: "decimal" },
-        { id: "miles-counter", target: 32000, duration: 2500, step: 1000, format: "short" },
-        { id: "happy-customers-counter", target: 15000, duration: 2000, step: 500, format: "full" }
-    ];
-    counters.forEach(({ id, target, duration, step, format }) => animateCounter(id, target, duration, step, format));
-}
+// function initCounters() {
+//     const counters = [
+//         { id: "fleet-counter", target: 24000, duration: 2000, step: 1000, format: "short" },
+//         { id: "rating-counter", target: 46, duration: 1500, step: 1, format: "decimal" },
+//         { id: "miles-counter", target: 32000, duration: 2500, step: 1000, format: "short" },
+//         { id: "happy-customers-counter", target: 15000, duration: 2000, step: 500, format: "full" }
+//     ];
+//     counters.forEach(({ id, target, duration, step, format }) => animateCounter(id, target, duration, step, format));
+// }
 
 function animateCounter(elementId, target, duration, step, format) {
     const element = document.getElementById(elementId);

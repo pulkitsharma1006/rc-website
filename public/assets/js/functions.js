@@ -68,10 +68,38 @@ $(document).ready(function(){
     // Calculation for fuel Consumption
     // Change the code aand total capacity of truck 300L monthly
     $(document).ready(function () {
-        $('#currencySelect').on('change', function () {
-            const symbol = getCurrencySymbol($(this).val());
-            $('#currencySymbol').text(symbol);
-        });
+        const dailyFuelCapacity = 200; // in litres
+
+        function getCurrencySymbol(currency) {
+            const symbols = {
+                INR: '₹',
+                USD: '$',
+                EUR: '€',
+                GBP: '£',
+                JPY: '¥'
+            };
+            return symbols[currency] || '';
+        }
+
+        // Animate numbers
+        $.fn.animateNumber = function (value, symbol) {
+            $(this).prop('Counter', 0).animate({
+                Counter: value
+            }, {
+                duration: 800,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(symbol + now.toFixed(2));
+                }
+            });
+        };
+
+        // Animate waves
+        function animateWave(id, value, max, baseBottom = -90, range = 60) {
+            const percentage = Math.min(value / max, 1);
+            const newBottom = baseBottom + (percentage * range);
+            $(id).animate({ bottom: newBottom + 'px' }, 800);
+        }
 
         $('.custom-button').on('click', function () {
             const fleetSize = parseFloat($('#fleetSizeInput').val()) || 0;
@@ -79,37 +107,41 @@ $(document).ready(function(){
             const fuelTheft = parseFloat($('#fuelInput').val()) || 0;
             const currencySymbol = getCurrencySymbol($('#currencySelect').val());
 
-            const monthlyLoss = fleetSize * fuelTheft * fuelPrice * 30;
-            const monthlySave = monthlyLoss * 0.15; // changed to 15%
-            const dailyLoss = monthlyLoss / 30;
+            const totalDailyTheft = fuelTheft * fleetSize;
+            const dailyLoss = totalDailyTheft * fuelPrice;
+            const monthlyLoss = dailyLoss * 30;
+            const monthlySave = monthlyLoss * 0.15;
             const dailySave = monthlySave / 30;
+            const theftPercent = ((totalDailyTheft / dailyFuelCapacity) * 100).toFixed(1);
 
-            $('#lossAmount').text(currencySymbol + monthlyLoss.toFixed(2));
-            $('#saveAmount').text(currencySymbol + monthlySave.toFixed(2));
-            $('#dailyLoss').html(`On an Average <br> Everyday you are losing <br> ${currencySymbol}${dailyLoss.toFixed(2)}`);
-            $('#dailySave').html(`On an Average <br> Everyday you can save <br> ${currencySymbol}${dailySave.toFixed(2)}`);
+            // Animate numbers
+            $('#lossAmount').animateNumber(monthlyLoss, currencySymbol);
+            $('#saveAmount').animateNumber(monthlySave, currencySymbol);
+
+            $('#dailyLoss').html(`
+                On an Average <br>
+                Everyday you are losing <br>
+                <span id="dailyLossAmount"></span><br>
+                <span class="text-sm text-red-400">That's ${theftPercent}% of your daily fuel!</span>
+            `);
+            $('#dailySave').html(`
+                On an Average <br>
+                Everyday you can save <br>
+                <span id="dailySaveAmount"></span>
+            `);
+
+            $('#dailyLossAmount').animateNumber(dailyLoss, currencySymbol);
+            $('#dailySaveAmount').animateNumber(dailySave, currencySymbol);
+
+            // Animate wave heights
+            animateWave('#move-red', monthlyLoss, 500000);   // adjust max as per realistic scale
+            animateWave('#move-green', monthlySave, 100000);
         });
 
-        // Increment / Decrement functions
-        window.incrementFleet = function () {
-            let val = parseInt($('#fleetSizeInput').val()) || 0;
-            $('#fleetSizeInput').val(val + 1);
-        }
-
-        window.decrementFleet = function () {
-            let val = parseInt($('#fleetSizeInput').val()) || 0;
-            $('#fleetSizeInput').val(Math.max(0, val - 1));
-        }
-
-        window.incrementLiter = function () {
-            let val = parseFloat($('#fuelInput').val()) || 0;
-            $('#fuelInput').val((val + 1).toFixed(1));
-        }
-
-        window.decrementLiter = function () {
-            let val = parseFloat($('#fuelInput').val()) || 0;
-            $('#fuelInput').val(Math.max(0, val - 1).toFixed(1));
-        }
+        $('#currencySelect').on('change', function () {
+            const symbol = getCurrencySymbol($(this).val());
+            $('#currencySymbol').text(symbol);
+        });
     });
 
     // Calculation for fuel Consumption
