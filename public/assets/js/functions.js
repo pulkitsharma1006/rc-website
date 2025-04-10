@@ -22,6 +22,34 @@ $(document).ready(function(){
     });
 
 
+    $(document).ready(function () {
+        const $video = $("#main-video");
+      
+        // Initial active button
+        $(".video-btn").first().addClass("bg-gradient-to-b from-[#E6FFFC] to-[#92D9D2]");
+      
+        // On video load, fade it in
+        $video.on("loadeddata", function () {
+          $video.fadeIn(400); // fade-in when video is ready
+        });
+      
+        // Click event
+        $(".video-btn").on("click", function () {
+          const videoSrc = $(this).data("video");
+          $(".video-btn").removeClass("bg-gradient-to-b from-[#E6FFFC] to-[#92D9D2]");
+          $(this).addClass("bg-gradient-to-b from-[#E6FFFC] to-[#92D9D2]");
+      
+          // Fade out, switch source, fade in on load
+          $video.fadeOut(200, function () {
+            $("#video-source").attr("src", videoSrc);
+            $video[0].load();
+            $video[0].play();
+          });
+        });
+      });
+      
+
+
     $(document).ready(function(){
         var owl = $(".owl-carousel");
     
@@ -69,7 +97,7 @@ $(document).ready(function(){
     // Change the code aand total capacity of truck 300L monthly
     $(document).ready(function () {
         const dailyFuelCapacity = 200; // in litres
-
+    
         function getCurrencySymbol(currency) {
             const symbols = {
                 INR: '₹',
@@ -80,7 +108,7 @@ $(document).ready(function(){
             };
             return symbols[currency] || '';
         }
-
+    
         // Animate numbers
         $.fn.animateNumber = function (value, symbol) {
             $(this).prop('Counter', 0).animate({
@@ -93,56 +121,83 @@ $(document).ready(function(){
                 }
             });
         };
-
+    
         // Animate waves
         function animateWave(id, value, max, baseBottom = -90, range = 60) {
             const percentage = Math.min(value / max, 1);
             const newBottom = baseBottom + (percentage * range);
             $(id).animate({ bottom: newBottom + 'px' }, 800);
         }
-
+    
         $('.custom-button').on('click', function () {
             const fleetSize = parseFloat($('#fleetSizeInput').val()) || 0;
             const fuelPrice = parseFloat($('#fuelPriceInput').val()) || 0;
             const fuelTheft = parseFloat($('#fuelInput').val()) || 0;
             const currencySymbol = getCurrencySymbol($('#currencySelect').val());
-
+    
             const totalDailyTheft = fuelTheft * fleetSize;
             const dailyLoss = totalDailyTheft * fuelPrice;
             const monthlyLoss = dailyLoss * 30;
             const monthlySave = monthlyLoss * 0.15;
             const dailySave = monthlySave / 30;
             const theftPercent = ((totalDailyTheft / dailyFuelCapacity) * 100).toFixed(1);
-
+    
             // Animate numbers
             $('#lossAmount').animateNumber(monthlyLoss, currencySymbol);
             $('#saveAmount').animateNumber(monthlySave, currencySymbol);
-
+    
             $('#dailyLoss').html(`
                 On an Average <br>
                 Everyday you are losing <br>
                 <span id="dailyLossAmount"></span><br>
-                <span class="text-sm text-red-400">That's ${theftPercent}% of your daily fuel!</span>
             `);
             $('#dailySave').html(`
                 On an Average <br>
                 Everyday you can save <br>
                 <span id="dailySaveAmount"></span>
             `);
-
+    
             $('#dailyLossAmount').animateNumber(dailyLoss, currencySymbol);
             $('#dailySaveAmount').animateNumber(dailySave, currencySymbol);
-
+    
             // Animate wave heights
-            animateWave('#move-red', monthlyLoss, 500000);   // adjust max as per realistic scale
+            animateWave('#move-red', monthlyLoss, 500000);
             animateWave('#move-green', monthlySave, 100000);
         });
-
+    
         $('#currencySelect').on('change', function () {
             const symbol = getCurrencySymbol($(this).val());
             $('#currencySymbol').text(symbol);
         });
+    
+        // Increment & Decrement functionality
+        window.incrementFleet = function () {
+            const input = document.getElementById('fleetSizeInput');
+            input.value = parseInt(input.value || 0) + 1;
+        };
+    
+        window.decrementFleet = function () {
+            const input = document.getElementById('fleetSizeInput');
+            const current = parseInt(input.value || 0);
+            if (current > 0) {
+                input.value = current - 1;
+            }
+        };
+    
+        window.incrementLiter = function () {
+            const input = document.getElementById('fuelInput');
+            input.value = parseInt(input.value || 0) + 1;
+        };
+    
+        window.decrementLiter = function () {
+            const input = document.getElementById('fuelInput');
+            const current = parseInt(input.value || 0);
+            if (current > 0) {
+                input.value = current - 1;
+            }
+        };
     });
+    
 
     // Calculation for fuel Consumption
     // Change the code aand total capacity of truck 300L monthly

@@ -11,7 +11,7 @@
 @media (max-width:1023px) {
   .container {margin: 0 24px;}
 }
-@media(max-width: 960px) {
+@media(max-width: 1024px) {
   .overVideo .widgets.right,
   .overVideo .widgets.left{
     top: auto;
@@ -46,6 +46,9 @@
 }
 
 @media (max-width: 420px) {
+  .Marquee-tag {
+    width: 100%;
+  }
   .breadcrumb .cont {
     padding: 4px 8px !important;
     border-radius: 4px !important;
