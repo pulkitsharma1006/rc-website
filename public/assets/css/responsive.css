@@ -6,12 +6,26 @@
   .language-dropdown {top: 18px; left: auto; margin: 0; right: 84px;}
   .dropdown-btn {border-radius: 6px;}
   .dropdown-menu {border-radius: 6px; margin-top: -31px; margin-left: -1px;}
+  .overVideo .widgets.right,
+  .overVideo .widgets.left{
+    top: auto;
+    left: auto;
+    right: 0;
+    transform: translate(-7%, -58%);
+    border-radius: 0.4rem;
+  }
+  
+  .overVideo .widgets.right img,
+    .overVideo .widgets.left img{
+    width: 250px;
+    border-radius: 0.5rem;
+  }
 }
 
 @media (max-width:1023px) {
   .container {margin: 0 24px;}
 }
-@media(max-width: 1024px) {
+@media (max-width: 1023px) {
   .overVideo .widgets.right,
   .overVideo .widgets.left{
     top: auto;

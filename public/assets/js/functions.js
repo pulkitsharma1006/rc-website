@@ -203,6 +203,42 @@ $(document).ready(function(){
     // Change the code aand total capacity of truck 300L monthly
 
 
+
+    $(document).ready(function () {
+        function animateCounter(id, target, duration = 2000) {
+            $({ countNum: 0 }).animate({ countNum: target }, {
+                duration: duration,
+                easing: 'swing',
+                step: function () {
+                    $(id).text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                    $(id).text(this.countNum.toLocaleString()); // Optional: for commas
+                }
+            });
+        }
+    
+        function isScrolledIntoView(elem) {
+            const docViewTop = $(window).scrollTop();
+            const docViewBottom = docViewTop + $(window).height();
+            const elemTop = $(elem).offset().top;
+            const elemBottom = elemTop + $(elem).height();
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
+    
+        let hasAnimated = false;
+    
+        $(window).on('scroll', function () {
+            if (!hasAnimated && isScrolledIntoView($('#happy-customers-counter'))) {
+                animateCounter('#happy-customers-counter', 15000);
+                animateCounter('#fleet-counter', 24000);
+                animateCounter('#miles-counter', 32000);
+                hasAnimated = true;
+            }
+        });
+    });
+
+
     $(document).ready(function () {
         $("#openPopup").click(function () {
             $("#videoFrame").attr("src", "https://www.youtube.com/embed/ldWWGNb37lE?si=-ItWkk4RoA41F_eT");
